@@ -1,0 +1,154 @@
+<!ENTITY extension.title "Закладки Google">
+<!ENTITY gmarks.service "Закладки Google">
+<!ENTITY addbkmk.visibility "Доступність:">
+<!ENTITY addbkmk.visibility.option1 "Особисті">
+<!ENTITY addbkmk.visibility.option2 "Загальні">
+<!ENTITY submissonError "Була помилка, зв&apos;язана з наступною закладкою Google:">
+<!ENTITY refresh "Оновити">
+<!ENTITY bkmk.open "Відкрити">
+<!ENTITY bkmk.openTab "Відкрити в новій вкладці">
+<!ENTITY bkmk.openWindow "Відкрити в новому вікні">
+<!ENTITY bkmk.edit "Властивості">
+<!ENTITY bkmk.changefavicon "Змінити світлинку">
+<!ENTITY bkmk.rename "Перейменувати">
+<!ENTITY bkmk.updateURL "Оновити посилання">
+<!ENTITY bkmk.removelbl "Видалити ярлик">
+<!ENTITY bkmk.newlbl "Додати нові ярлики...">
+<!ENTITY bkmk.del "Видалити">
+<!ENTITY lbl.tabs "Відкрити у вкладках">
+<!ENTITY lbl.tabs.key "o">
+<!ENTITY lbl.addhere "Додати сюди">
+<!ENTITY lbl.addhere.key "a">
+<!ENTITY lbl.rename "Перейменувати">
+<!ENTITY lbl.rename.key "r">
+<!ENTITY lbl.dellbl "Видалити ярлик">
+<!ENTITY lbl.dellbl.key "d">
+<!ENTITY lbl.delbkmk "Видалити закладки">
+<!ENTITY lbl.delbkmk.key "b">
+<!ENTITY lbl.expand "Розгорнути">
+<!ENTITY addbkmk.label "Додати закладку">
+<!ENTITY search.label "Пошук:">
+<!ENTITY search.key "s">
+<!ENTITY notsignedon "Ви не авторизувалися в Google акаунті.">
+<!ENTITY email "Электронна пошта:">
+<!ENTITY pass "Пароль:">
+<!ENTITY autosignin "Запам&apos;ятати мене">
+<!ENTITY autosignin.tooltip "Входити тільки якщо ви не авторизовані">
+<!ENTITY signin "Увійти">
+<!ENTITY signout "Вийти">
+<!ENTITY retry "Оновити">
+<!ENTITY star.tooltip "Відкривати закладки Google в боковому вікні">
+<!ENTITY GMarks.add "Додати закладку Google">
+<!ENTITY GMarks.quickAdd "Швидко додати закладку Google">
+<!ENTITY GMarks.quickAdd.tooltip "Швидко додати закладку">
+<!ENTITY tree.colTitle "Закладки Google">
+<!ENTITY sidebar.title "Закладки Google">
+<!ENTITY pref.main.title "Головний">
+<!ENTITY options.title "Налаштування">
+<!ENTITY options.sidebar "Бічне меню">
+<!ENTITY options.toolbar "Панель інструментів">
+<!ENTITY options.menu "Меню">
+<!ENTITY options.misc "Різне">
+<!ENTITY bkmksmenu.hide "Сховати меню закладок">
+<!ENTITY gmarksmenu.enable "Увімкнути меню закладок Google">
+<!ENTITY gmarksmenu.rename "Перейменувати меню GMarks в Закладки">
+<!ENTITY menu.title "GMarks">
+<!ENTITY menu.accesskey "G">
+<!ENTITY menu.add "Додати">
+<!ENTITY menu.remove "Видалити">
+<!ENTITY menu.reset "Оновити">
+<!ENTITY menu.up "Вверх">
+<!ENTITY menu.down "Вниз">
+<!ENTITY import.label "Імпортувати закладки Firefox">
+<!ENTITY export.label "Експортувати закладки Google">
+<!ENTITY delete.label "Видалити закладки Google">
+<!ENTITY delete.tooltip "GMarks схибив? Будь-ласка сповістіть мене.">
+<!ENTITY editfilters.label "Редагувати фільтр">
+<!ENTITY sort.label "Сортувати за:">
+<!ENTITY sort.title "Заголовок (алфавітний)">
+<!ENTITY sort.date "Дата">
+<!ENTITY sort.visits "Журнал (історія Firefox)">
+<!ENTITY sort.clicks "Популярність закладки">
+<!ENTITY accountinfo.label "Налаштування акаунта">
+<!ENTITY alwaysuse "Завжди використовувати цей акаунт">
+<!ENTITY alwaysuse.tooltip "Використовувати визначений акаунт, навіть якщо ви використовуєте інший">
+<!ENTITY nosignin "Я можу увійти сам, дякую.">
+<!ENTITY options.other "Інші налаштування">
+<!ENTITY enableGMarksSuggest "Увімкнути пропозиції Gmarks">
+<!ENTITY showAddBookmark "Показати кнопку &quot;Додати закладку&quot;">
+<!ENTITY usectrld "Увімкнути підтримку Ctrl+D/Ctrl+Shift+D">
+<!ENTITY showIcons "Показати світлинки">
+<!ENTITY showFavicons "Показати світлинки закладок">
+<!ENTITY validateFavicons "Перевірити світлинки закладок">
+<!ENTITY validateFavicons.tooltip "Перевіряти світлинки закладок, вимкніть, якщо у вас багато закладок.">
+<!ENTITY showCount "Показати кількість закладок">
+<!ENTITY httpsFavicons "Увімкнути https світлинки закладок">
+<!ENTITY showrecent "Показати 10 останніх">
+<!ENTITY showfrequent "Показати 10 найпопулярніших">
+<!ENTITY whatisthis "Що це?">
+<!ENTITY nestedChar "Ущільнений розділювач закладок:">
+<!ENTITY disableQuickSearch "Вимкнути швидкий пошук">
+<!ENTITY qsTitle "Ярлик швидкого пошуку">
+<!ENTITY qsDescription "Натисніть будь-яку клавішу в тестовому вікні, щоб змінити ярлики швидкого пошуку">
+<!ENTITY HiddenLabels "Оберіть ярлики, щоб сховати їх">
+<!ENTITY unlabeledDescription "Ярлик за замовчуванням">
+<!ENTITY unlabeldDescrioption2 "Залишити порожнім, якщо додатковий ярлик не потрібен">
+<!ENTITY GoogleReader.description "Ярлик за замовчуванням для відмічених пунктів Reader.">
+<!ENTITY GoogleReader.show "Показувати відмічені пункти в закладках Google.">
+<!ENTITY openinnewtab "Завжди відкривати в новій вкладці.">
+<!ENTITY toolbar.title "Панель закладок Google">
+<!ENTITY toolbar.hide "Не показувати панель">
+<!ENTITY toolbar.begining "Показати перед панеллю закладок FF">
+<!ENTITY toolbar.end "Показати після панелі закладок FF">
+<!ENTITY toolbar.label "Ярлик панелі:">
+<!ENTITY toolbar.desc "Залишіть порожнім, щоб показати всі закладки.">
+<!ENTITY toolbar.showIconsOnly "Показати тільки світлинки">
+<!ENTITY confirmBeforeDelete "Спитати перед видаленням">
+<!ENTITY bkmkLblCombos "Увімкнути сполучення Закладка+Ярлик">
+<!ENTITY bkmkLblCombos.details "Зводити разом ярлики та закладки з однаковими іменами і головними ярликами. Якщо натиснути зведену групу, то відкриються закладені сайти. Якщо натиснути знаки + чи -, то відкриється каталог закладок">
+<!ENTITY gmopts.tab.general "Загальне">
+<!ENTITY gmopts.tab.display "Вигляд">
+<!ENTITY gmopts.tab.other "Інше">
+<!ENTITY caption.more "Ще">
+<!ENTITY filters.tabs.filtersList "Фільтри">
+<!ENTITY filters.tabs.createFilter "Створити фільтр">
+<!ENTITY filters.tabs.editFilter "Редагувати фільтр">
+<!ENTITY filterList.description "Наступні фільтри використані до нових закладок:">
+<!ENTITY filter.bkmk.results "Перелік закладок за цим фільтром:">
+<!ENTITY createFilter.query "Запит">
+<!ENTITY createFilter.action "Дія">
+<!ENTITY field.name "Ім&apos;я:">
+<!ENTITY field.url "Посилання:">
+<!ENTITY field.labels "Ярлик:">
+<!ENTITY field.notes "Примітка:">
+<!ENTITY cQuery.all "Все:">
+<!ENTITY cAction.description1 "Додайте ++ до початку імені чи примітки.">
+<!ENTITY cAction.labels "Додати ярлики:">
+<!ENTITY cAction.name "Редагувати ім&apos;я:">
+<!ENTITY cAction.url "Редагувати посилання:">
+<!ENTITY cAction.notes "Додати примітку:">
+<!ENTITY cAction.delete "Видалити закладені">
+<!ENTITY convertToNested "Зведіть кілька ярликів до одного складеного">
+<!ENTITY cAction.createFilter.label "Створити фільтр">
+<!ENTITY cAction.cancel.label "Відмінити">
+<!ENTITY cAction.applyAll.label "Також застосувати до наступних закладок:">
+<!ENTITY labels.howto "Розділіть ярлики комою: Новини, Справи, Літні канікули">
+<!ENTITY qSearch.info "Швидкий пошук по закладках (натисніть двічі, щоб сховати)">
+<!ENTITY addtoFFandGMarks "Обидва">
+<!ENTITY organize "Впорядкувати закладки Google">
+<!ENTITY org.file "Файл">
+<!ENTITY org.file.accesskey "f">
+<!ENTITY org.file.import "Імпорт">
+<!ENTITY org.file.export "Експорт">
+<!ENTITY org.file.filters "Фільтри">
+<!ENTITY org.file.close "Закрити">
+<!ENTITY org.file.close.accesskey "c">
+<!ENTITY org.close.commandkey "w">
+<!ENTITY details.name "Ім&apos;я">
+<!ENTITY details.url "Разміщення">
+<!ENTITY details.notes "Примітки">
+<!ENTITY details.labels "Ярлики">
+<!ENTITY details.dateAdded "Дата додавання">
+<!ENTITY details.visited "Відвідані">
+<!ENTITY details.lastVisited "Остання відвідана">
+<!ENTITY gmarks.loading "Завантаження...">

@@ -1,0 +1,154 @@
+<!ENTITY extension.title "GMarks">
+<!ENTITY gmarks.service "Google Bogmærker">
+<!ENTITY addbkmk.visibility "Visibility:">
+<!ENTITY addbkmk.visibility.option1 "Private">
+<!ENTITY addbkmk.visibility.option2 "Public">
+<!ENTITY submissonError "Der opstod en fejl da følgende bogmærker blev tilføjet til Google:">
+<!ENTITY refresh "Opdater">
+<!ENTITY bkmk.open "Åben">
+<!ENTITY bkmk.openTab "Åben i nyt Faneblad">
+<!ENTITY bkmk.openWindow "Åben i nyt vindue">
+<!ENTITY bkmk.edit "Indstillinger">
+<!ENTITY bkmk.changefavicon "Skift Favikon">
+<!ENTITY bkmk.rename "Omdøb">
+<!ENTITY bkmk.updateURL "Opdater URL">
+<!ENTITY bkmk.removelbl "Fjern Label">
+<!ENTITY bkmk.newlbl "Tilføj nye Labels...">
+<!ENTITY bkmk.del "Slet">
+<!ENTITY lbl.tabs "Åben i Faneblade">
+<!ENTITY lbl.tabs.key "o">
+<!ENTITY lbl.addhere "Tilføj Bogmærke her">
+<!ENTITY lbl.addhere.key "a">
+<!ENTITY lbl.rename "Omdøb">
+<!ENTITY lbl.rename.key "r">
+<!ENTITY lbl.dellbl "Slet Label">
+<!ENTITY lbl.dellbl.key "d">
+<!ENTITY lbl.delbkmk "Slet Bogmærker">
+<!ENTITY lbl.delbkmk.key "b">
+<!ENTITY lbl.expand "Udvid">
+<!ENTITY addbkmk.label "Tilføj Bogmærke">
+<!ENTITY search.label "Søg:">
+<!ENTITY search.key "s">
+<!ENTITY notsignedon "Du er ikke logget på din Google Konto.">
+<!ENTITY email "Email:">
+<!ENTITY pass "Password:">
+<!ENTITY autosignin "Log på Automatisk">
+<!ENTITY autosignin.tooltip "Log kun på hvis du ikke er logget på allerede">
+<!ENTITY signin "Log på">
+<!ENTITY signout "Log ud">
+<!ENTITY retry "Prøv igen">
+<!ENTITY star.tooltip "Åbner GMarks i en sidebar">
+<!ENTITY GMarks.add "Tilføj GMark">
+<!ENTITY GMarks.quickAdd "Quick Tilføj GMark">
+<!ENTITY GMarks.quickAdd.tooltip "Tilføj GMark(Uden om tilføj bogmærker vinduet)">
+<!ENTITY tree.colTitle "Google Bogmærker">
+<!ENTITY sidebar.title "GMarks">
+<!ENTITY pref.main.title "Hoved menu">
+<!ENTITY options.title "Indstillinger">
+<!ENTITY options.sidebar "Sidebar">
+<!ENTITY options.toolbar "Værktøjsbar">
+<!ENTITY options.menu "Menu">
+<!ENTITY options.misc "Misc">
+<!ENTITY bkmksmenu.hide "Skjul Bogmærke menu">
+<!ENTITY gmarksmenu.enable "Aktiver GMarks menu">
+<!ENTITY gmarksmenu.rename "Rename GMarks menu to Bookmarks">
+<!ENTITY menu.title "GMarks">
+<!ENTITY menu.accesskey "G">
+<!ENTITY menu.add "Tilføj">
+<!ENTITY menu.remove "Fjern">
+<!ENTITY menu.reset "Reset">
+<!ENTITY menu.up "Op">
+<!ENTITY menu.down "Ned">
+<!ENTITY import.label "Importer Firefox Bogmærker">
+<!ENTITY export.label "Exporter Google Bogmærker">
+<!ENTITY delete.label "Slet Google Bogmærker">
+<!ENTITY delete.tooltip "Lavede GMarks revage i dine bogmærker? Fortæl os om det.">
+<!ENTITY editfilters.label "Rediger Filtere">
+<!ENTITY sort.label "Sort By:">
+<!ENTITY sort.title "Titel(Alfabetisk)">
+<!ENTITY sort.date "Dato">
+<!ENTITY sort.visits "Besøg(Firefox Historie)">
+<!ENTITY sort.clicks "Kliks på Bogmærker">
+<!ENTITY accountinfo.label "Konto Indstillinger">
+<!ENTITY alwaysuse "Brug altid denne konto">
+<!ENTITY alwaysuse.tooltip "Hav adgang til en specifik konto også selv om du er logget på en anden konto">
+<!ENTITY nosignin "Jeg kan godt selv logge ind, Tak.">
+<!ENTITY options.other "Andre Indstillinger">
+<!ENTITY enableGMarksSuggest "Aktiver GMarks">
+<!ENTITY showAddBookmark "Vis Tilføj bogmærke knap">
+<!ENTITY usectrld "Aktiver Ctrl+D/Ctrl+Shift+D Hjælp">
+<!ENTITY showIcons "Vis Ikoner">
+<!ENTITY showFavicons "Vis Favikoner">
+<!ENTITY validateFavicons "Godkend Favikoner">
+<!ENTITY validateFavicons.tooltip "Chek for at se om et bogmærke eller et favikon eksistere, deaktiver hvis du har mange bogmærker.">
+<!ENTITY showCount "Vis Bogmærke tæller">
+<!ENTITY httpsFavicons "Aktiver http&apos;s Favikoner">
+<!ENTITY showrecent "Vis de 10 mest brugte">
+<!ENTITY showfrequent "Vis de 10 mest sendte">
+<!ENTITY whatisthis "Hvad er dette">
+<!ENTITY nestedChar "Nederste Separtor Label">
+<!ENTITY disableQuickSearch "Deaktiver Quick søg">
+<!ENTITY qsTitle "Quick søgnings tast">
+<!ENTITY qsDescription "Tryk på en tast i tekst boksen for at skifte Quick søgnings tast">
+<!ENTITY HiddenLabels "Indtast labels her under for at gemme.">
+<!ENTITY unlabeledDescription "Standart label til bogmærker uden label">
+<!ENTITY unlabeldDescrioption2 "Hvis du ikke ønsker en label så lad denne stå blank">
+<!ENTITY GoogleReader.description "Standart Label for læst">
+<!ENTITY GoogleReader.show "Vis startede tilføjelser i Gmarks.">
+<!ENTITY openinnewtab "åben altid i en ny separator">
+<!ENTITY toolbar.title "GMarks Værktøjs bar">
+<!ENTITY toolbar.hide "Færdig: Vis Værktøjsbar">
+<!ENTITY toolbar.begining "Vis før FF Bogmærker">
+<!ENTITY toolbar.end "Vis Efter FF Bøgmærker">
+<!ENTITY toolbar.label "Værktøjs barens Label">
+<!ENTITY toolbar.desc "Lad denne stå blank for at vise alle bogmærker">
+<!ENTITY toolbar.showIconsOnly "Vis kun ikoner">
+<!ENTITY confirmBeforeDelete "Bekræft før Sletning">
+<!ENTITY bkmkLblCombos "Aktiver Bogmærker og Labels">
+<!ENTITY bkmkLblCombos.details "Rediger Labels og bogmærker med samme navn label, når der trykkes rediger gruppe, åbnes bogmærkesiden, når der bliver trykket på ( + eller - ) åbner eller lukker folderen.">
+<!ENTITY gmopts.tab.general "Generalt">
+<!ENTITY gmopts.tab.display "Vis">
+<!ENTITY gmopts.tab.other "Andre">
+<!ENTITY caption.more "Mere">
+<!ENTITY filters.tabs.filtersList "Filtere">
+<!ENTITY filters.tabs.createFilter "Lav et Filter">
+<!ENTITY filters.tabs.editFilter "Rediger Filter">
+<!ENTITY filterList.description "Følgende Filtre er tilføjet til alle nye Bogmærker">
+<!ENTITY filter.bkmk.results "Bogmærke resultater for dette filter">
+<!ENTITY createFilter.query "Lav Filter">
+<!ENTITY createFilter.action "Ok">
+<!ENTITY field.name "Navn:">
+<!ENTITY field.url "URL:">
+<!ENTITY field.labels "Labels:">
+<!ENTITY field.notes "Noter:">
+<!ENTITY cQuery.all "Alle:">
+<!ENTITY cAction.description1 "Begynd med ++ for at tilføje til begyndelsen af navn eller noter feltet.">
+<!ENTITY cAction.labels "Tilføj Labels:">
+<!ENTITY cAction.name "Rediger Navn:">
+<!ENTITY cAction.url "Rediger URL:">
+<!ENTITY cAction.notes "Tilføj Noter:">
+<!ENTITY cAction.delete "Slet (Dem der allerede er tilføjet bogmærker)">
+<!ENTITY convertToNested "Fjern flere labels med samme navn om til et label">
+<!ENTITY cAction.createFilter.label "Lav et Filter">
+<!ENTITY cAction.cancel.label "Fortryd">
+<!ENTITY cAction.applyAll.label "Tilføj også til Bogmærker her under">
+<!ENTITY labels.howto "Lav flere Labels på en gang med et komma: Fx. Nyheder, Huskeliste, Spil..">
+<!ENTITY qSearch.info "Quick Bogmærke søgning">
+<!ENTITY addtoFFandGMarks "Begge">
+<!ENTITY organize "Arranger GMarks">
+<!ENTITY org.file "Fil">
+<!ENTITY org.file.accesskey "f">
+<!ENTITY org.file.import "Importer">
+<!ENTITY org.file.export "Exporter">
+<!ENTITY org.file.filters "Filtere">
+<!ENTITY org.file.close "Luk">
+<!ENTITY org.file.close.accesskey "c">
+<!ENTITY org.close.commandkey "w">
+<!ENTITY details.name "Navn">
+<!ENTITY details.url "Lokation">
+<!ENTITY details.notes "Noter">
+<!ENTITY details.labels "Labels">
+<!ENTITY details.dateAdded "Tilføjet den">
+<!ENTITY details.visited "Besøgt">
+<!ENTITY details.lastVisited "Sidst Besøgt">
+<!ENTITY gmarks.loading "Loading...">

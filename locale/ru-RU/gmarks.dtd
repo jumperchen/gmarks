@@ -1,0 +1,154 @@
+<!ENTITY extension.title "Закладки Google">
+<!ENTITY gmarks.service "Закладки Google">
+<!ENTITY addbkmk.visibility "Доступность:">
+<!ENTITY addbkmk.visibility.option1 "Личные">
+<!ENTITY addbkmk.visibility.option2 "Общие">
+<!ENTITY submissonError "Была ошибка, связанная со следующей закладкой Google:">
+<!ENTITY refresh "Обновить">
+<!ENTITY bkmk.open "Открыть">
+<!ENTITY bkmk.openTab "Открыть в новой вкладке">
+<!ENTITY bkmk.openWindow "Открыть в новом окне">
+<!ENTITY bkmk.edit "Свойства">
+<!ENTITY bkmk.changefavicon "Изменить иконку">
+<!ENTITY bkmk.rename "Переименовать">
+<!ENTITY bkmk.updateURL "Обновить ссылку">
+<!ENTITY bkmk.removelbl "Удалить ярлык">
+<!ENTITY bkmk.newlbl "Добавить новые ярлыки...">
+<!ENTITY bkmk.del "Удалить">
+<!ENTITY lbl.tabs "Открыть во вкладках">
+<!ENTITY lbl.tabs.key "o">
+<!ENTITY lbl.addhere "Добавить">
+<!ENTITY lbl.addhere.key "a">
+<!ENTITY lbl.rename "Переименовать">
+<!ENTITY lbl.rename.key "r">
+<!ENTITY lbl.dellbl "Удалить ярлык">
+<!ENTITY lbl.dellbl.key "d">
+<!ENTITY lbl.delbkmk "Удалить закладки">
+<!ENTITY lbl.delbkmk.key "b">
+<!ENTITY lbl.expand "Расширить">
+<!ENTITY addbkmk.label "Добавить закладку">
+<!ENTITY search.label "Поиск:">
+<!ENTITY search.key "s">
+<!ENTITY notsignedon "Вы не авторизовались в Google аккаунте.">
+<!ENTITY email "Электронная почта:">
+<!ENTITY pass "Пароль:">
+<!ENTITY autosignin "Запомнить меня">
+<!ENTITY autosignin.tooltip "Входить только если вы не авторизированы">
+<!ENTITY signin "Войти">
+<!ENTITY signout "Выйти">
+<!ENTITY retry "Обновить">
+<!ENTITY star.tooltip "Открывать закладки Google в боковом окне">
+<!ENTITY GMarks.add "Добавить закладку Google">
+<!ENTITY GMarks.quickAdd "Быстрое добавить закладку Google">
+<!ENTITY GMarks.quickAdd.tooltip "Быстрое добавить закладку">
+<!ENTITY tree.colTitle "Закладки Google">
+<!ENTITY sidebar.title "Закладки Google">
+<!ENTITY pref.main.title "Главный">
+<!ENTITY options.title "Настройки">
+<!ENTITY options.sidebar "Боковое меню">
+<!ENTITY options.toolbar "Панель инструметов">
+<!ENTITY options.menu "Меню">
+<!ENTITY options.misc "Разное">
+<!ENTITY bkmksmenu.hide "Спрятать меню закладок">
+<!ENTITY gmarksmenu.enable "Включить меню закладок Google">
+<!ENTITY gmarksmenu.rename "Rename GMarks menu to Bookmarks">
+<!ENTITY menu.title "GMarks">
+<!ENTITY menu.accesskey "G">
+<!ENTITY menu.add "Добавить">
+<!ENTITY menu.remove "Удалить">
+<!ENTITY menu.reset "Обновить">
+<!ENTITY menu.up "Вверх">
+<!ENTITY menu.down "Вниз">
+<!ENTITY import.label "Импортировать закладки Firefox">
+<!ENTITY export.label "Экспортировать закладки Google">
+<!ENTITY delete.label "Удалить закладки Google">
+<!ENTITY delete.tooltip "GMarks что перепутал? Пожалуйста сообщите мне.">
+<!ENTITY editfilters.label "Редактировать фильтр">
+<!ENTITY sort.label "Сортировать по:">
+<!ENTITY sort.title "Заголовок (алфавитный)">
+<!ENTITY sort.date "Дата">
+<!ENTITY sort.visits "Журнал (история Firefox)">
+<!ENTITY sort.clicks "Популярность закладки">
+<!ENTITY accountinfo.label "Настройки аккаунта">
+<!ENTITY alwaysuse "Всегда использовать этот аккаунт">
+<!ENTITY alwaysuse.tooltip "Использовать определенный аккаунт, даже если вы используете другой">
+<!ENTITY nosignin "Я могу войти сам, спасибо.">
+<!ENTITY options.other "Другое настройки">
+<!ENTITY enableGMarksSuggest "Включить предложения Gmarks">
+<!ENTITY showAddBookmark "Показать кнопку &quot;Добавть закладку&quot;">
+<!ENTITY usectrld "Включить поддержку Ctrl+D/Ctrl+Shift+D">
+<!ENTITY showIcons "Показать иконки">
+<!ENTITY showFavicons "Показать иконки закладок">
+<!ENTITY validateFavicons "Проверить иконки закладок">
+<!ENTITY validateFavicons.tooltip "Проверять наличить иконки закладки, отключите, если у вас много закладок.">
+<!ENTITY showCount "Показать количество закладок">
+<!ENTITY httpsFavicons "Включить https иконки закладок">
+<!ENTITY showrecent "Показать 10 самых последних">
+<!ENTITY showfrequent "Показать 10 самых популярных">
+<!ENTITY whatisthis "Что это?">
+<!ENTITY nestedChar "Уплотненный разделитель закладок:">
+<!ENTITY disableQuickSearch "Отключить быстрый поиск">
+<!ENTITY qsTitle "Ярлык быстрого поиска">
+<!ENTITY qsDescription "Нажмите любую клавишу в текстовом окне, чтобы изменить ярлыки быстрого поиска">
+<!ENTITY HiddenLabels "Выберите ярлыки, чтобы скрыть их">
+<!ENTITY unlabeledDescription "Ярлык по умолчанию">
+<!ENTITY unlabeldDescrioption2 "Оставить пустым, если дополнительный ярлык не требуется">
+<!ENTITY GoogleReader.description "Ярлык по умолчанию для отмеченных пунктов Reader.">
+<!ENTITY GoogleReader.show "Показать отмеченные пункты в закладках Google.">
+<!ENTITY openinnewtab "Всегда открывать в новой закладке.">
+<!ENTITY toolbar.title "Панель закладок Google">
+<!ENTITY toolbar.hide "Не показать панель">
+<!ENTITY toolbar.begining "Показать перед панелью закладок FF">
+<!ENTITY toolbar.end "Показать после панеле закладок FF">
+<!ENTITY toolbar.label "Ярлык панели:">
+<!ENTITY toolbar.desc "Оставить пустым, чтобы показать все закладки.">
+<!ENTITY toolbar.showIconsOnly "Показать только иконки">
+<!ENTITY confirmBeforeDelete "Спросить перед удалением">
+<!ENTITY bkmkLblCombos "Включить сочетание Заклыдка+Ярлык">
+<!ENTITY bkmkLblCombos.details "Сводит вместе ярлыки и закладки с одинаковыми именами и главными ярлыками. Если нажать на сведенную круппу, то откроются заложенные сайты. Если нажать перемычку (знаки + или -), то откроется каталок закладок">
+<!ENTITY gmopts.tab.general "Главный">
+<!ENTITY gmopts.tab.display "Отобразить">
+<!ENTITY gmopts.tab.other "Другие">
+<!ENTITY caption.more "Еще">
+<!ENTITY filters.tabs.filtersList "Фильтры">
+<!ENTITY filters.tabs.createFilter "Создать фильтр">
+<!ENTITY filters.tabs.editFilter "Редактировать фильтр">
+<!ENTITY filterList.description "Следующие фильтры применены к новым закладкам:">
+<!ENTITY filter.bkmk.results "Список закладок по этому фильтру:">
+<!ENTITY createFilter.query "Запрос">
+<!ENTITY createFilter.action "Действие">
+<!ENTITY field.name "Имя:">
+<!ENTITY field.url "Ссылка:">
+<!ENTITY field.labels "Ярлык:">
+<!ENTITY field.notes "Заметки:">
+<!ENTITY cQuery.all "Все:">
+<!ENTITY cAction.description1 "Начните с ++ добавить к началу имени или отметить поле.">
+<!ENTITY cAction.labels "Добавить ярлыки:">
+<!ENTITY cAction.name "Радактировать имя:">
+<!ENTITY cAction.url "Редактировать ссылку:">
+<!ENTITY cAction.notes "Добавить заметки:">
+<!ENTITY cAction.delete "Удалить заложенные">
+<!ENTITY convertToNested "Превратить составные ярлыки в один составной">
+<!ENTITY cAction.createFilter.label "Создать фильтр">
+<!ENTITY cAction.cancel.label "Отменить">
+<!ENTITY cAction.applyAll.label "Также применить к следующим закладкам:">
+<!ENTITY labels.howto "Разделить ярлыки запятой: Новости, Дела, летние каникулы">
+<!ENTITY qSearch.info "Быстрый поиск по закладкам (нажмите дважды, чтобы спрятать)">
+<!ENTITY addtoFFandGMarks "Оба">
+<!ENTITY organize "Организовать закладки Gmarks">
+<!ENTITY org.file "Файл">
+<!ENTITY org.file.accesskey "f">
+<!ENTITY org.file.import "Импорт">
+<!ENTITY org.file.export "Экспорт">
+<!ENTITY org.file.filters "Фильтры">
+<!ENTITY org.file.close "Закрыть">
+<!ENTITY org.file.close.accesskey "c">
+<!ENTITY org.close.commandkey "w">
+<!ENTITY details.name "Имя">
+<!ENTITY details.url "Размещение">
+<!ENTITY details.notes "Заметки">
+<!ENTITY details.labels "Ярлыки">
+<!ENTITY details.dateAdded "Дата добавления">
+<!ENTITY details.visited "Посещенные">
+<!ENTITY details.lastVisited "Последнее посещение">
+<!ENTITY gmarks.loading "Loading...">

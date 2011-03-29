@@ -1,0 +1,51 @@
+content     gmarks content/
+skin        gmarks classic skin/classic/
+
+locale      gmarks en-US locale/en-US/
+locale      gmarks da-DK locale/da-DK/
+locale      gmarks de-DK locale/de-DE/
+locale      gmarks es-ES locale/es-ES/
+locale      gmarks fi-FI locale/fi-FI/
+locale      gmarks fr-FR locale/fr-FR/
+locale      gmarks ja-JP locale/ja-JP/
+locale      gmarks nl-NL locale/nl-NL/
+locale      gmarks pl-PL locale/pl-PL/
+locale      gmarks pt-BR locale/pt-BR/
+locale      gmarks pt-PT locale/pt-PT/
+locale      gmarks ro-RO locale/ro-RO/
+locale      gmarks ru-RU locale/ru-RU/
+locale      gmarks tr-TR locale/tr-TR/
+locale      gmarks uk-UA locale/uk-UA/
+locale      gmarks zh-CN locale/zh-CN/
+locale      gmarks zh-TW locale/zh-TW/
+
+overlay     chrome://browser/content/browser.xul chrome://gmarks/content/gmarks.xul
+overlay     chrome://browser/content/bookmarks/addBookmark2.xul chrome://gmarks/content/addBookmarksOverlay.xul
+style       chrome://global/content/customizeToolbar.xul	chrome://gmarks/skin/service.css
+
+style       chrome://browser/content/browser.xul chrome://gmarks/skin/gmarksff2.css appversion<=2.0.0.*
+
+style       chrome://browser/content/browser.xul chrome://gmarks/skin/gmarksff3-windows.css appversion>=3.0b5pre os=WINNT
+style       chrome://gmarks/content/gmarksSidebar.xul chrome://gmarks/skin/gmarksff3-windows.css appversion>=3.0b5pre os=WINNT
+style       chrome://gmarks/content/gmarksOrganize.xul chrome://gmarks/skin/gmarksff3-windows.css appversion>=3.0b5pre os=WINNT
+
+style       chrome://browser/content/browser.xul chrome://gmarks/skin/gmarksff3-mac.css appversion>=3.0b5pre os=Darwin
+style       chrome://gmarks/content/gmarksSidebar.xul chrome://gmarks/skin/gmarksff3-mac.css appversion>=3.0b5pre os=Darwin
+style       chrome://gmarks/content/gmarksOrganize.xul chrome://gmarks/skin/gmarksff3-mac.css appversion>=3.0b5pre os=Darwin
+
+style       chrome://browser/content/browser.xul chrome://gmarks/skin/gmarksff3-gtk.css appversion>=3.0b5pre os=Linux
+style       chrome://gmarks/content/gmarksSidebar.xul chrome://gmarks/skin/gmarksff3-gtk.css appversion>=3.0b5pre os=Linux
+style       chrome://gmarks/content/gmarksOrganize.xul chrome://gmarks/skin/gmarksff3-gtk.css appversion>=3.0b5pre os=Linux
+style       chrome://browser/content/browser.xul chrome://gmarks/skin/gmarksff3-gtk.css appversion>=3.0b5pre os=SunOS
+style       chrome://gmarks/content/gmarksSidebar.xul chrome://gmarks/skin/gmarksff3-gtk.css appversion>=3.0b5pre os=SunOS
+style       chrome://gmarks/content/gmarksOrganize.xul chrome://gmarks/skin/gmarksff3-gtk.css appversion>=3.0b5pre os=SunOS
+
+interfaces components/nsIGMarksCom.xpt
+interfaces components/nsIGMarksService.xpt
+component {f6c06be0-b631-11db-abbd-0800200c9a66} components/nsIGMarksCom_google.js
+contract @mozilla.org/gmarks/com/google;1 {f6c06be0-b631-11db-abbd-0800200c9a66}
+category profile-after-change GMarksCom @mozilla.org/gmarks/com/google;1
+
+component {47eddc3e-b79f-11db-8314-0800200c9a66} components/nsIGMarksService.js
+contract @mozilla.org/gmarks;1 {47eddc3e-b79f-11db-8314-0800200c9a66}
+category profile-after-change GMarksService @mozilla.org/gmarks;1

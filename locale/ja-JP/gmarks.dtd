@@ -1,0 +1,154 @@
+<!ENTITY extension.title "GMarks">
+<!ENTITY gmarks.service "Google ブックマーク">
+<!ENTITY addbkmk.visibility "Visibility:">
+<!ENTITY addbkmk.visibility.option1 "Private">
+<!ENTITY addbkmk.visibility.option2 "Public">
+<!ENTITY submissonError "There was an error submitting the following bookmark to Google:">
+<!ENTITY refresh "クリア">
+<!ENTITY bkmk.open "開く">
+<!ENTITY bkmk.openTab "新しいタブに開く">
+<!ENTITY bkmk.openWindow "新しいウインドウに開く">
+<!ENTITY bkmk.edit "保存">
+<!ENTITY bkmk.changefavicon "Faviconを変更">
+<!ENTITY bkmk.rename "名前を変更">
+<!ENTITY bkmk.updateURL "URLを変更">
+<!ENTITY bkmk.removelbl "ラベルを削除">
+<!ENTITY bkmk.newlbl "新しいラベル">
+<!ENTITY bkmk.del "削除">
+<!ENTITY lbl.tabs "タブで開く">
+<!ENTITY lbl.tabs.key "o">
+<!ENTITY lbl.addhere "ブックマークを追加">
+<!ENTITY lbl.addhere.key "a">
+<!ENTITY lbl.rename "名前を変更">
+<!ENTITY lbl.rename.key "r">
+<!ENTITY lbl.dellbl "ラベルを削除">
+<!ENTITY lbl.dellbl.key "d">
+<!ENTITY lbl.delbkmk "ブックマークを削除">
+<!ENTITY lbl.delbkmk.key "b">
+<!ENTITY lbl.expand "フォルダを開く">
+<!ENTITY addbkmk.label "ブックマークを追加">
+<!ENTITY search.label "検索:">
+<!ENTITY search.key "s">
+<!ENTITY notsignedon "Google ブックマークにログインします">
+<!ENTITY email "ユーザー名:">
+<!ENTITY pass "パスワード:">
+<!ENTITY autosignin "自動サインイン">
+<!ENTITY autosignin.tooltip "サインイン時の入力を省略します">
+<!ENTITY signin "サインイン">
+<!ENTITY signout "サインアウト">
+<!ENTITY retry "再試行する">
+<!ENTITY star.tooltip "サイドバーでGMarksを開く">
+<!ENTITY GMarks.add "GMarkに追加">
+<!ENTITY GMarks.quickAdd "すぐにGMarkに追加">
+<!ENTITY GMarks.quickAdd.tooltip "GMarkに追加(ブックマークに追加のウインドウを表示しない)">
+<!ENTITY tree.colTitle "Google ブックマーク">
+<!ENTITY sidebar.title "Google ブックマーク">
+<!ENTITY pref.main.title "メイン">
+<!ENTITY options.title "オプション">
+<!ENTITY options.sidebar "サイドバー">
+<!ENTITY options.toolbar "ツールバー">
+<!ENTITY options.menu "メニュー">
+<!ENTITY options.misc "その他">
+<!ENTITY bkmksmenu.hide "ブックマークメニューを隠す">
+<!ENTITY gmarksmenu.enable "GMarksメニューを有効にする">
+<!ENTITY gmarksmenu.rename "GMarksメニューの名前をブックマークに変更する">
+<!ENTITY menu.title "GMarks">
+<!ENTITY menu.accesskey "G">
+<!ENTITY menu.add "追加">
+<!ENTITY menu.remove "削除">
+<!ENTITY menu.reset "リセット">
+<!ENTITY menu.up "上へ">
+<!ENTITY menu.down "下へ">
+<!ENTITY import.label "Firefox ブックマークをインポート">
+<!ENTITY export.label "Google ブックマークをエクスポート">
+<!ENTITY delete.label "Google ブックマークを削除">
+<!ENTITY delete.tooltip "GMarksを使用していて何か不具合がありましたか?もしあればどうか私に知らせてください。">
+<!ENTITY editfilters.label "フィルターを編集">
+<!ENTITY sort.label "並べ替える:">
+<!ENTITY sort.title "タイトル(アルファベット順)">
+<!ENTITY sort.date "日付">
+<!ENTITY sort.visits "訪問(Firefoxの履歴)">
+<!ENTITY sort.clicks "ブックマークのクリック">
+<!ENTITY accountinfo.label "アカウント設定">
+<!ENTITY alwaysuse "いつもこのアカウントを使用する">
+<!ENTITY alwaysuse.tooltip "別のアカウントにサインインしても指定されたアカウントにサインインします。">
+<!ENTITY nosignin "自分でサインインする">
+<!ENTITY options.other "その他">
+<!ENTITY enableGMarksSuggest "GMarks サジェストを有効にする">
+<!ENTITY showAddBookmark "ブックマークを追加ボタンを表示する">
+<!ENTITY usectrld "Ctrl+D/Ctrl+Shift+D サポートを有効にする">
+<!ENTITY showIcons "アイコンを表示する">
+<!ENTITY showFavicons "Faviconsを表示する">
+<!ENTITY validateFavicons "Faviconsを有効にする">
+<!ENTITY validateFavicons.tooltip "ブックマークのfaviconが存在するかどうかチェックします。多くのブックマークがある場合は無能にしてください。\n">
+<!ENTITY showCount "ブックマーク数を表示する">
+<!ENTITY httpsFavicons "https Faviconsを無効にする">
+<!ENTITY showrecent "最近の10件を表示">
+<!ENTITY showfrequent "よく訪問する10件を表示">
+<!ENTITY whatisthis "これは何?">
+<!ENTITY nestedChar "ラベルセパレーター：">
+<!ENTITY disableQuickSearch "クイック検索を無効にする">
+<!ENTITY qsTitle "クイック検索">
+<!ENTITY qsDescription "テキストボックス内で入力するクイック検索ショートカットキー">
+<!ENTITY HiddenLabels "以下のラベルを表示しない">
+<!ENTITY unlabeledDescription "ラベルなしの場合のデフォルトラベル">
+<!ENTITY unlabeldDescrioption2 "余分なラベルを隠します">
+<!ENTITY GoogleReader.description "スターアイテムを表示するデフォルトラベル">
+<!ENTITY GoogleReader.show "GMarksにスターアイテムを表示">
+<!ENTITY openinnewtab "常に新しいタブで開く">
+<!ENTITY toolbar.title "GMarks ツールバー">
+<!ENTITY toolbar.hide "ツールバーを表示しない">
+<!ENTITY toolbar.begining "FFブックマークツールバーの前に表示する">
+<!ENTITY toolbar.end "FFブックマークツールバーの後に表示する">
+<!ENTITY toolbar.label "ツールバーラベル:">
+<!ENTITY toolbar.desc "空白の場合全てのブックマークを表示します">
+<!ENTITY toolbar.showIconsOnly "アイコンのみ表示">
+<!ENTITY confirmBeforeDelete "削除する前に確認する">
+<!ENTITY bkmkLblCombos "ブックマーク＋ラベルのコンボを有効にする">
+<!ENTITY bkmkLblCombos.details "Merges labels and bookmarks with the same names and parent labels, when clicking on the merged group, it opens the bookmarked site, when clicking on the twisty(+ or - sign), it opens the folder">
+<!ENTITY gmopts.tab.general "一般">
+<!ENTITY gmopts.tab.display "表示">
+<!ENTITY gmopts.tab.other "その他">
+<!ENTITY caption.more "詳細">
+<!ENTITY filters.tabs.filtersList "フィルター">
+<!ENTITY filters.tabs.createFilter "フィルターを作成">
+<!ENTITY filters.tabs.editFilter "フィルターを編集">
+<!ENTITY filterList.description "以下のフィルタは、全ての新しいブックマークに適用されます:">
+<!ENTITY filter.bkmk.results "このフィルタのブックマークへの適用結果:">
+<!ENTITY createFilter.query "質問">
+<!ENTITY createFilter.action "アクション">
+<!ENTITY field.name "名前:">
+<!ENTITY field.url "URL:">
+<!ENTITY field.labels "ラベル:">
+<!ENTITY field.notes "メモ:">
+<!ENTITY cQuery.all "全て:">
+<!ENTITY cAction.description1 "Begin with ++ to add to the begining of the field.">
+<!ENTITY cAction.labels "ラベル:">
+<!ENTITY cAction.name "名前:">
+<!ENTITY cAction.url "URL:">
+<!ENTITY cAction.notes "メモ:">
+<!ENTITY cAction.delete "削除 (重複してブックマークされているため)">
+<!ENTITY convertToNested "複数のラベルを1個の入れ子にされたラベルに変える">
+<!ENTITY cAction.createFilter.label "フィルターを作成">
+<!ENTITY cAction.cancel.label "キャンセル">
+<!ENTITY cAction.applyAll.label "以下のブックマークに適用してください:">
+<!ENTITY labels.howto "ラベルの文字を分けるにはコンマを入力してください　例: ニュース,すべきこと,夏休み">
+<!ENTITY qSearch.info "クイックブックマーク検索(指定されたボタンを２回おすと表示もしくは隠れます)">
+<!ENTITY addtoFFandGMarks "両方">
+<!ENTITY organize "GMarksの管理">
+<!ENTITY org.file "ファイル">
+<!ENTITY org.file.accesskey "f">
+<!ENTITY org.file.import "インポート">
+<!ENTITY org.file.export "エクスポート">
+<!ENTITY org.file.filters "フィルター">
+<!ENTITY org.file.close "閉じる">
+<!ENTITY org.file.close.accesskey "c">
+<!ENTITY org.close.commandkey "w">
+<!ENTITY details.name "名前">
+<!ENTITY details.url "URL">
+<!ENTITY details.notes "説明">
+<!ENTITY details.labels "ラベル">
+<!ENTITY details.dateAdded "追加日時">
+<!ENTITY details.visited "訪問日時">
+<!ENTITY details.lastVisited "最終訪問日時">
+<!ENTITY gmarks.loading "ロードします…">

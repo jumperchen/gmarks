@@ -1,0 +1,154 @@
+<!ENTITY extension.title "GMarks">
+<!ENTITY gmarks.service "Google Favoritos">
+<!ENTITY addbkmk.visibility "Visibilidade:">
+<!ENTITY addbkmk.visibility.option1 "Privado">
+<!ENTITY addbkmk.visibility.option2 "Público">
+<!ENTITY submissonError "Houve um erro ao enviar o seguinte favorito para o Google:">
+<!ENTITY refresh "Atualizar">
+<!ENTITY bkmk.open "Abrir">
+<!ENTITY bkmk.openTab "Abrir em nova aba">
+<!ENTITY bkmk.openWindow "Abrir em nova janela">
+<!ENTITY bkmk.edit "Propriedades">
+<!ENTITY bkmk.changefavicon "Change Favicon">
+<!ENTITY bkmk.rename "Renomear">
+<!ENTITY bkmk.updateURL "Atualizar URL">
+<!ENTITY bkmk.removelbl "Remover marcador">
+<!ENTITY bkmk.newlbl "Adicionar novos marcadores...">
+<!ENTITY bkmk.del "Excluir">
+<!ENTITY lbl.tabs "Abrir tudo em abas">
+<!ENTITY lbl.tabs.key "t">
+<!ENTITY lbl.addhere "Adicionar favorito aqui">
+<!ENTITY lbl.addhere.key "a">
+<!ENTITY lbl.rename "Renomear">
+<!ENTITY lbl.rename.key "r">
+<!ENTITY lbl.dellbl "Excluir marcador">
+<!ENTITY lbl.dellbl.key "x">
+<!ENTITY lbl.delbkmk "Excluir favoritos">
+<!ENTITY lbl.delbkmk.key "f">
+<!ENTITY lbl.expand "Expandir">
+<!ENTITY addbkmk.label "Adicionar favorito">
+<!ENTITY search.label "Procurar:">
+<!ENTITY search.key "p">
+<!ENTITY notsignedon "Você não está conectado à sua Conta Google.">
+<!ENTITY email "E-mail:">
+<!ENTITY pass "Senha:">
+<!ENTITY autosignin "Conectar automaticamente">
+<!ENTITY autosignin.tooltip "Conecta apenas se você já não estiver conectado">
+<!ENTITY signin "Conectar">
+<!ENTITY signout "Desconectar">
+<!ENTITY retry "Tentar novamente">
+<!ENTITY star.tooltip "Abre o GMarks no painel lateral">
+<!ENTITY GMarks.add "Adicionar GMark">
+<!ENTITY GMarks.quickAdd "Adicionar rapidamente GMark">
+<!ENTITY GMarks.quickAdd.tooltip "Adicionar GMark (Sem passar pela janela)">
+<!ENTITY tree.colTitle "Google Favoritos">
+<!ENTITY sidebar.title "GMarks">
+<!ENTITY pref.main.title "Principal">
+<!ENTITY options.title "Opções">
+<!ENTITY options.sidebar "Painel lateral">
+<!ENTITY options.toolbar "Barra de ferramentas">
+<!ENTITY options.menu "Menu">
+<!ENTITY options.misc "Miscelânea">
+<!ENTITY bkmksmenu.hide "Ocultar menu de Favoritos">
+<!ENTITY gmarksmenu.enable "Ativar menu do GMarks">
+<!ENTITY gmarksmenu.rename "Rename GMarks menu to Bookmarks">
+<!ENTITY menu.title "GMarks">
+<!ENTITY menu.accesskey "G">
+<!ENTITY menu.add "Adicionar">
+<!ENTITY menu.remove "Remover">
+<!ENTITY menu.reset "Redefinir">
+<!ENTITY menu.up "Acima">
+<!ENTITY menu.down "Abaixo">
+<!ENTITY import.label "Importar favoritos do Firefox">
+<!ENTITY export.label "Exportar favoritos do Google">
+<!ENTITY delete.label "Excluir Favoritos do Google">
+<!ENTITY delete.tooltip "O GMarks fez alguma besteira? Por favor conte-nos.">
+<!ENTITY editfilters.label "Editar filtros">
+<!ENTITY sort.label "Classificar por:">
+<!ENTITY sort.title "Título (alfabético)">
+<!ENTITY sort.date "Data">
+<!ENTITY sort.visits "Visits(Firefox History)">
+<!ENTITY sort.clicks "Bookmark Clicks">
+<!ENTITY accountinfo.label "Preferências da conta">
+<!ENTITY alwaysuse "Sempre usar essa conta">
+<!ENTITY alwaysuse.tooltip "Acessa a conta especificada mesmo se você estiver conectado a outra conta">
+<!ENTITY nosignin "Eu posso conectar sozinho, obrigado.">
+<!ENTITY options.other "Outras opções">
+<!ENTITY enableGMarksSuggest "Ativar sugestões do GMarks">
+<!ENTITY showAddBookmark "Mostrar botão &apos;adicionar favorito&apos;">
+<!ENTITY usectrld "Ativar suporte a Ctrl+D/Ctrl+Shift+D">
+<!ENTITY showIcons "Mostrar ícones">
+<!ENTITY showFavicons "Mostrar favicons">
+<!ENTITY validateFavicons "Validar favicons">
+<!ENTITY validateFavicons.tooltip "Verifica se o favicon de um favorito existe; desative se você tem muitos favoritos.">
+<!ENTITY showCount "Mostrar número de favoritos">
+<!ENTITY httpsFavicons "Ativar favicons via https">
+<!ENTITY showrecent "Show 10 most recent">
+<!ENTITY showfrequent "Show 10 most frequent">
+<!ENTITY whatisthis "O que é isso?">
+<!ENTITY nestedChar "Separador hierárquico de marcadores:">
+<!ENTITY disableQuickSearch "Desativar Busca Rápida">
+<!ENTITY qsTitle "Atalho para Busca Rápida">
+<!ENTITY qsDescription "Aperte qualquer tecla na caixa de texto para mudar o atalho para a busca rápida">
+<!ENTITY HiddenLabels "Insira abaixo os marcadores a esconder.">
+<!ENTITY unlabeledDescription "Marcador padrão para itens sem marcadores">
+<!ENTITY unlabeldDescrioption2 "Deixe em branco para não usar marcador extra">
+<!ENTITY GoogleReader.description "Etiqueta padrão para itens destacados do Reader.">
+<!ENTITY GoogleReader.show "Mostrar itens destacados no GMarks.">
+<!ENTITY openinnewtab "Sempre abrir numa nova aba.">
+<!ENTITY toolbar.title "Barra de ferramentas do GMarks">
+<!ENTITY toolbar.hide "Não mostrar a barra de ferramentas">
+<!ENTITY toolbar.begining "Mostrar antes da barra de favoritos do FF">
+<!ENTITY toolbar.end "Mostrar depois da barra de favoritos">
+<!ENTITY toolbar.label "Descrição da barra de ferramentas:">
+<!ENTITY toolbar.desc "Deixe em branco para mostrar todos os favoritos.">
+<!ENTITY toolbar.showIconsOnly "Mostrar apenas ícones">
+<!ENTITY confirmBeforeDelete "Confirmar antes de excluir">
+<!ENTITY bkmkLblCombos "Ativar combos Favorito+Marcador">
+<!ENTITY bkmkLblCombos.details "Mescla marcadores e favoritos com os mesmos nomes e marcadores-pai. Ao clicar no grupo mesclado, o site é aberto; ao clicar no símbolo + ou -, a pasta é aberta">
+<!ENTITY gmopts.tab.general "Geral">
+<!ENTITY gmopts.tab.display "Exibição">
+<!ENTITY gmopts.tab.other "Outros">
+<!ENTITY caption.more "Mais">
+<!ENTITY filters.tabs.filtersList "Filtros">
+<!ENTITY filters.tabs.createFilter "Criar filtro">
+<!ENTITY filters.tabs.editFilter "Editar filtro">
+<!ENTITY filterList.description "Os seguintes filtros são aplicados a todos os novos favoritos:">
+<!ENTITY filter.bkmk.results "Resultados para esse filtro nos seus favoritos:">
+<!ENTITY createFilter.query "Critério">
+<!ENTITY createFilter.action "Ação">
+<!ENTITY field.name "Nome:">
+<!ENTITY field.url "URL:">
+<!ENTITY field.labels "Marcadores:">
+<!ENTITY field.notes "Notas:">
+<!ENTITY cQuery.all "Tudo:">
+<!ENTITY cAction.description1 "Comece com ++ para adicionar ao começo do campo nome ou notas.">
+<!ENTITY cAction.labels "Adicionar marcadores:">
+<!ENTITY cAction.name "Editar nome:">
+<!ENTITY cAction.url "Editar URL:">
+<!ENTITY cAction.notes "Adicionar notas:">
+<!ENTITY cAction.delete "Excluir (para os já adicionados)">
+<!ENTITY convertToNested "Transformar marcadores múltiplos em um marcador hierarquizado">
+<!ENTITY cAction.createFilter.label "Criar filtro">
+<!ENTITY cAction.cancel.label "Cancelar">
+<!ENTITY cAction.applyAll.label "Aplicar também aos favoritos abaixo:">
+<!ENTITY labels.howto "Separe marcadores com uma vírcula: Notícias, Tarefas, férias de verão">
+<!ENTITY qSearch.info "Busca Rápida de Favoritos (aperte Home duas vezes para esconder)">
+<!ENTITY addtoFFandGMarks "Ambos">
+<!ENTITY organize "Organizar GMarks">
+<!ENTITY org.file "Arquivo">
+<!ENTITY org.file.accesskey "a">
+<!ENTITY org.file.import "Importar">
+<!ENTITY org.file.export "Exportar">
+<!ENTITY org.file.filters "Filtros">
+<!ENTITY org.file.close "Fechar">
+<!ENTITY org.file.close.accesskey "r">
+<!ENTITY org.close.commandkey "w">
+<!ENTITY details.name "Nome">
+<!ENTITY details.url "Localização">
+<!ENTITY details.notes "Notas">
+<!ENTITY details.labels "Marcadores">
+<!ENTITY details.dateAdded "Adicionado em">
+<!ENTITY details.visited "Visitado">
+<!ENTITY details.lastVisited "Última visita">
+<!ENTITY gmarks.loading "Carregando...">

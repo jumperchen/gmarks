@@ -1,0 +1,154 @@
+<!ENTITY extension.title "GMarks">
+<!ENTITY gmarks.service "Google Bookmarks">
+<!ENTITY addbkmk.visibility "Visibility: ">
+<!ENTITY addbkmk.visibility.option1 "Private">
+<!ENTITY addbkmk.visibility.option2 "Public">
+<!ENTITY submissonError "There was an error submitting the following bookmark to Google:">
+<!ENTITY refresh "Refresh">
+<!ENTITY bkmk.open "Open">
+<!ENTITY bkmk.openTab "Open in new Tab">
+<!ENTITY bkmk.openWindow "Open in new Window">
+<!ENTITY bkmk.edit "Properties">
+<!ENTITY bkmk.changefavicon "Change Favicon">
+<!ENTITY bkmk.rename "Rename">
+<!ENTITY bkmk.updateURL "Update URL">
+<!ENTITY bkmk.removelbl "Remove Label">
+<!ENTITY bkmk.newlbl "Add new Labels...">
+<!ENTITY bkmk.del "Delete">
+<!ENTITY lbl.tabs "Open in Tabs">
+<!ENTITY lbl.tabs.key "o">
+<!ENTITY lbl.addhere "Add Bookmark Here">
+<!ENTITY lbl.addhere.key "a">
+<!ENTITY lbl.rename "Rename">
+<!ENTITY lbl.rename.key "r">
+<!ENTITY lbl.dellbl "Delete Label">
+<!ENTITY lbl.dellbl.key "d">
+<!ENTITY lbl.delbkmk "Delete Bookmarks">
+<!ENTITY lbl.delbkmk.key "b">
+<!ENTITY lbl.expand "Expand">
+<!ENTITY addbkmk.label "Add Bookmark">
+<!ENTITY search.label "Search:">
+<!ENTITY search.key "s">
+<!ENTITY notsignedon "You are not signed into your Google Account.">
+<!ENTITY email "Email: ">
+<!ENTITY pass "Password: ">
+<!ENTITY autosignin "Automatically sign in">
+<!ENTITY autosignin.tooltip "Only signs in if you aren&apos;t signed in">
+<!ENTITY signin "Sign in">
+<!ENTITY signout "Sign out">
+<!ENTITY retry "Retry">
+<!ENTITY star.tooltip "Opens GMarks in the sidebar">
+<!ENTITY GMarks.add "Add GMark">
+<!ENTITY GMarks.quickAdd "Quick Add GMark">
+<!ENTITY GMarks.quickAdd.tooltip "Add GMark(Bypass add bookmark window)">
+<!ENTITY tree.colTitle "Google Bookmarks">
+<!ENTITY sidebar.title "GMarks">
+<!ENTITY pref.main.title "Main">
+<!ENTITY options.title "Options">
+<!ENTITY options.sidebar "Sidebar">
+<!ENTITY options.toolbar "Toolbar">
+<!ENTITY options.menu "Menu">
+<!ENTITY options.misc "Misc">
+<!ENTITY bkmksmenu.hide "Hide Bookmarks menu">
+<!ENTITY gmarksmenu.enable "Enable GMarks menu">
+<!ENTITY gmarksmenu.rename "Rename GMarks menu to Bookmarks">
+<!ENTITY menu.title "GMarks">
+<!ENTITY menu.accesskey "G">
+<!ENTITY menu.add "Add">
+<!ENTITY menu.remove "Remove">
+<!ENTITY menu.reset "Reset">
+<!ENTITY menu.up "Up">
+<!ENTITY menu.down "Down">
+<!ENTITY import.label "Import Firefox Bookmarks">
+<!ENTITY export.label "Export Google Bookmarks">
+<!ENTITY delete.label "Delete Google Bookmarks">
+<!ENTITY delete.tooltip "Did GMarks mess something up? Please let me know.">
+<!ENTITY editfilters.label "Edit Filters">
+<!ENTITY sort.label "Sort By:">
+<!ENTITY sort.title "Title(Alphabetical)">
+<!ENTITY sort.date "Date">
+<!ENTITY sort.visits "Visits(Firefox History)">
+<!ENTITY sort.clicks "Bookmark Clicks">
+<!ENTITY accountinfo.label "Account Preferences">
+<!ENTITY alwaysuse "Always use this account">
+<!ENTITY alwaysuse.tooltip "Accesses the specified account even if you are signed into another account">
+<!ENTITY nosignin "I can signin myself, thanks.">
+<!ENTITY options.other "Other Options">
+<!ENTITY enableGMarksSuggest "Enable GMarks Suggest">
+<!ENTITY showAddBookmark "Show add bookmark button">
+<!ENTITY usectrld "Enable Ctrl+D/Ctrl+Shift+D Support">
+<!ENTITY showIcons "Show Icons">
+<!ENTITY showFavicons "Show Favicons">
+<!ENTITY validateFavicons "Validate Favicons">
+<!ENTITY validateFavicons.tooltip "Checks to see if a bookmark&apos;s favicon exists, disable if you have a lot of bookmarks.">
+<!ENTITY showCount "Show Bookmark Count">
+<!ENTITY httpsFavicons "Enable https Favicons">
+<!ENTITY showrecent "Show 10 most recent">
+<!ENTITY showfrequent "Show 10 most frequent">
+<!ENTITY whatisthis "Whats this?">
+<!ENTITY nestedChar "Nested Labels Separator:">
+<!ENTITY disableQuickSearch "Disable Quick Search">
+<!ENTITY qsTitle "Quick Search shortcut">
+<!ENTITY qsDescription "Press any key in the textbox to change the quick search shortcuts">
+<!ENTITY HiddenLabels "Enter labels below to hide.">
+<!ENTITY unlabeledDescription "Default label for those with no labels">
+<!ENTITY unlabeldDescrioption2 "Leave blank for no extra label">
+<!ENTITY GoogleReader.description "Default label for Reader&apos;s starred items.">
+<!ENTITY GoogleReader.show "Show starred items in GMarks.">
+<!ENTITY openinnewtab "Always open in a new tab.">
+<!ENTITY toolbar.title "GMarks Toolbar">
+<!ENTITY toolbar.hide "Don&apos;t show the toolbar">
+<!ENTITY toolbar.begining "Show before the FF Bookmarks Toolbar">
+<!ENTITY toolbar.end "Show after the FF Bookmarks Toolbar">
+<!ENTITY toolbar.label "Toolbar Label: ">
+<!ENTITY toolbar.desc "Leave blank to show all bookmarks.">
+<!ENTITY toolbar.showIconsOnly "Show icons only">
+<!ENTITY confirmBeforeDelete "Confirm Before Deleting">
+<!ENTITY bkmkLblCombos "Enable Bookmark+Label Combos">
+<!ENTITY bkmkLblCombos.details "Merges labels and bookmarks with the same names and parent labels, when clicking on the merged group, it opens the bookmarked site, when clicking on the twisty(+ or - sign), it opens the folder">
+<!ENTITY gmopts.tab.general "General">
+<!ENTITY gmopts.tab.display "Display">
+<!ENTITY gmopts.tab.other "Other">
+<!ENTITY caption.more "More">
+<!ENTITY filters.tabs.filtersList "Filters">
+<!ENTITY filters.tabs.createFilter "Create Filter">
+<!ENTITY filters.tabs.editFilter "Edit Filter">
+<!ENTITY filterList.description "The following filters are applied to all new bookmarks:">
+<!ENTITY filter.bkmk.results "Bookmark results for this filter:">
+<!ENTITY createFilter.query "Query">
+<!ENTITY createFilter.action "Action">
+<!ENTITY field.name "Name:">
+<!ENTITY field.url "URL:">
+<!ENTITY field.labels "Labels:">
+<!ENTITY field.notes "Notes:">
+<!ENTITY cQuery.all "All:">
+<!ENTITY cAction.description1 "Begin with ++ to add to the begining of the name or notes field.">
+<!ENTITY cAction.labels "Add Labels:">
+<!ENTITY cAction.name "Edit Name:">
+<!ENTITY cAction.url "Edit URL:">
+<!ENTITY cAction.notes "Add Notes:">
+<!ENTITY cAction.delete "Delete (For those already bookmarked)">
+<!ENTITY convertToNested "Turn multiple labels into one nested label">
+<!ENTITY cAction.createFilter.label "Create Filter">
+<!ENTITY cAction.cancel.label "Cancel">
+<!ENTITY cAction.applyAll.label "Also apply to the bookmarks below:">
+<!ENTITY labels.howto "Separate labels with a comma: News, To do, summer vacation">
+<!ENTITY qSearch.info "Quick Bookmark Search (hit Home twice to hide)">
+<!ENTITY addtoFFandGMarks "Both">
+<!ENTITY organize "Organize GMarks">
+<!ENTITY org.file "File">
+<!ENTITY org.file.accesskey "f">
+<!ENTITY org.file.import "Import">
+<!ENTITY org.file.export "Export">
+<!ENTITY org.file.filters "Filters">
+<!ENTITY org.file.close "Close">
+<!ENTITY org.file.close.accesskey "c">
+<!ENTITY org.close.commandkey "w">
+<!ENTITY details.name "Name">
+<!ENTITY details.url "Location">
+<!ENTITY details.notes "Notes">
+<!ENTITY details.labels "Labels">
+<!ENTITY details.dateAdded "Date Added">
+<!ENTITY details.visited "Visited">
+<!ENTITY details.lastVisited "Last Visited">
+<!ENTITY gmarks.loading "Loading...">

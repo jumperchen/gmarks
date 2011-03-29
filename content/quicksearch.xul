@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://gmarks/skin/style.css" type="text/css"?>
+
+<!DOCTYPE window SYSTEM "chrome://gmarks/locale/gmarks.dtd">
+
+<window id="gmarksQuickSearch" hidechrome="true" titlebar="no" title="Quick Search"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<script type="application/x-javascript" src="chrome://gmarks/content/quicksearch.js"/>
+	<script type="application/x-javascript" src="chrome://browser/content/utilityOverlay.js"/>
+
+ 	<popupset>
+		<popup id="gmqsResults"
+			ignorekeys="true"
+			position="after_start"
+			class="gmqsPopup"
+			width="440"
+			/>
+		<tooltip id="gmqsTooltip" orient="vertical"
+				crop="end"	maxWidth="500" style="max-width: 500px;"
+				onpopupshown="onTooltipShowing(event);"
+				onpopuphidden="onTooltipHidden(event);"/>
+	</popupset>
+	<groupbox class="gmarksQuickSearch">
+	 	<vbox align="center">
+		 	<hbox flex="1" style="width: 400px; margin-left: 20px; margin-right: 20px;">
+		 		<label id="qSearchLabel" value="&qSearch.info;"/>
+		 		<hbox align="right" flex="1">
+		 			<label value="x" onclick="doGMQSUnload();"/>
+		 		</hbox>
+		 	</hbox>
+		 	<stack flex="1">
+				<textbox id="gmarks-txtQuickSearch" value="" style="width: 400px; height: 30px;" flex="1"
+					onkeypress="handleKeypress(event);"
+					type="timed" timeout="500"
+					oncommand="doQuickSearchBookmarks();"
+					/>
+				<image id="statusImg" src="chrome://browser/skin/Throbber.gif" hidden="true"
+		 			left="380" top="7"
+		 			/>
+		 		<!--style="padding-left: 375px; padding-top: 4px; height: 8px; width: 8px; max-height: 8px; max-width: 8px;"-->
+			</stack>
+		</vbox>
+	</groupbox>
+</window>

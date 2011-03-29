@@ -1,0 +1,132 @@
+#bookmarksMenu[hidden="true"]{
+	display: none !important;
+	width: 0 !important;
+	max-width: 0 !important;
+	-moz-appearance: none !important;
+}
+
+.filtersTab {
+	height: 390px;
+	overflow: auto;
+}
+.gmarks-personalbkmk .toolbarbutton-icon,
+.gmarks-personalbkmk .menu-iconic-left image{
+	width: 16px;
+	height: 16px;
+}
+.gmarks-personalbkmk[show-text="always"] .toolbarbutton-text{
+  padding-right: 0px;
+  padding-left: 0px;
+  display: -moz-box !important;
+}
+.gmarks-personalfolder .toolbarbutton-icon,
+.gmarks-personalfolder .menu-iconic-left image{
+	width: 16px;
+  height: 16px;
+}
+.gmarks-personalfolder[show-text="always"] .toolbarbutton-text,
+.gmarks-personalfolder-all .toolbarbutton-text{
+  padding-right: 4px;
+  padding-left: 0px;
+  display: -moz-box !important;
+}
+#resultList{
+	height:150px;
+}
+.gmarksTree treechildren::-moz-tree-image(showIcon) {
+	width: 16px;
+	height: 16px;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+.gmarksTree treechildren::-moz-tree-image(showIcon,starredInReader) {
+	list-style-image: url("chrome://gmarks/skin/star.gif") !important;
+	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+.gmarksTree treechildren::-moz-tree-twisty(hideTwisty){
+	list-style-image: none !important;
+}
+#gmarkList {
+	margin: 0px; width: 100%; height: 100%; border: none;
+}
+#gmarkLabels, #gmarkDetails {
+	margin: 0px; border: none;
+}
+#gmarkDetails
+{
+  -moz-user-focus: normal !important;
+  -moz-user-select: text;
+}
+
+#editableTxt {
+	/*min-height: 2.8em;*/
+	-moz-user-focus: normal !important;
+	-moz-user-select: text !important;
+	-moz-appearance: none;
+	border: 1px solid Highlight;
+	-moz-border-top-colors: Highlight;
+	-moz-border-bottom-colors: Highlight;
+	-moz-border-left-colors: Highlight;
+	-moz-border-right-colors: Highlight;
+	margin: 0 0 0 -3px;
+	padding: 1px;
+}
+
+#gmarkDetails[editing] > treechildren:-moz-tree-row(selected)
+{
+	background-color: transparent;
+	border: none;
+}
+
+/**/
+.dropmarker {
+	list-style-image: url("chrome://global/skin/arrow/arrow-dn.gif");
+	padding-right: 4px;
+	margin: 4px;
+}
+ .gmPopupNormal{
+	background-color: white;
+	color: black;
+}
+
+.gmPopupSelected{
+	background-color: black;
+	color: white;
+}
+
+.gmqsPopup{
+	width: 440px;
+}
+.gmarksQuickSearch{
+	background-color: #FFFFFF;
+}
+/*Sidebar loading*/
+#treeStack{
+	width: 100%; height: 100%;
+	-moz-box-align: center;
+}
+
+#loadBox{
+	opacity: 1;
+	-moz-opacity: 1;
+	-moz-box-align: center;
+
+
+}
+#loadImage{
+	list-style-image: url("chrome://browser/skin/Throbber.gif");
+	max-width: 32px;
+	max-height: 32px;
+	margin:0px auto;
+}
+
+#gmarksOptions vbox.dialog-content-box,
+#gmarksOptions vbox{
+	padding: 0 0 0 0 !important;
+	margin: 0 0 0 0 !important;
+	background-color:yellow;
+}
+#gmarksOptions{
+	background-color: red;
+}

@@ -1,0 +1,154 @@
+<!ENTITY extension.title "GMarks">
+<!ENTITY gmarks.service "Google-kirjanmerkit">
+<!ENTITY addbkmk.visibility "Näkyvyys:">
+<!ENTITY addbkmk.visibility.option1 "Yksityinen">
+<!ENTITY addbkmk.visibility.option2 "Julkinen">
+<!ENTITY submissonError "Virhe lähetettäessa seuraavaa kirjanmerkkiä Googlelle:">
+<!ENTITY refresh "Päivitä">
+<!ENTITY bkmk.open "Avaa">
+<!ENTITY bkmk.openTab "Avaa uudelle välilehdelle">
+<!ENTITY bkmk.openWindow "Avaa uuteen ikkunaan">
+<!ENTITY bkmk.edit "Asetukset">
+<!ENTITY bkmk.changefavicon "Vaihda kuvake">
+<!ENTITY bkmk.rename "Uudelleennimeä">
+<!ENTITY bkmk.updateURL "Päivitä osoite">
+<!ENTITY bkmk.removelbl "Poista otsikko">
+<!ENTITY bkmk.newlbl "Lisää uusia otsikoita...">
+<!ENTITY bkmk.del "Poista">
+<!ENTITY lbl.tabs "Avaa välilehtiin">
+<!ENTITY lbl.tabs.key "o">
+<!ENTITY lbl.addhere "Lisää kirjanmerkki tähän">
+<!ENTITY lbl.addhere.key "a">
+<!ENTITY lbl.rename "Uudelleennimeä">
+<!ENTITY lbl.rename.key "r">
+<!ENTITY lbl.dellbl "Poista otsikko">
+<!ENTITY lbl.dellbl.key "d">
+<!ENTITY lbl.delbkmk "Poista kirjanmerkki">
+<!ENTITY lbl.delbkmk.key "b">
+<!ENTITY lbl.expand "Laajenna">
+<!ENTITY addbkmk.label "Lisää kirjanmerkki">
+<!ENTITY search.label "Haku:">
+<!ENTITY search.key "s">
+<!ENTITY notsignedon "Et ole kirjautunut Google Tiliisi">
+<!ENTITY email "Sähköposti:">
+<!ENTITY pass "Salasana:">
+<!ENTITY autosignin "Kirjaudu automaattisesti">
+<!ENTITY autosignin.tooltip "Kirjautuu vain jos et jo ole kirjautuneena">
+<!ENTITY signin "Kirjaudu sisään">
+<!ENTITY signout "Sign out">
+<!ENTITY retry "Yritä uudelleen">
+<!ENTITY star.tooltip "Avaa GMarksin sivupaneliksi">
+<!ENTITY GMarks.add "Lisää GMarkiksi">
+<!ENTITY GMarks.quickAdd "Lisää nopeasti GMarkiksi">
+<!ENTITY GMarks.quickAdd.tooltip "Lisää GMarkiksi (ohittaen lisäysikkunan)">
+<!ENTITY tree.colTitle "Google Kirjanmerkit">
+<!ENTITY sidebar.title "Google Kirjanmerkit">
+<!ENTITY pref.main.title "Yleiset">
+<!ENTITY options.title "Valinnat">
+<!ENTITY options.sidebar "Sivupaneli">
+<!ENTITY options.toolbar "Työkalurivi">
+<!ENTITY options.menu "Valikko">
+<!ENTITY options.misc "Sekalaiset">
+<!ENTITY bkmksmenu.hide "Piilota kirjanmerkkivalikko">
+<!ENTITY gmarksmenu.enable "Näytä Gmarks-valikko">
+<!ENTITY gmarksmenu.rename "GMarks-valikon nimeksi &quot;Kirjanmerkit&quot;">
+<!ENTITY menu.title "GMarks">
+<!ENTITY menu.accesskey "G">
+<!ENTITY menu.add "Lisää">
+<!ENTITY menu.remove "Poista">
+<!ENTITY menu.reset "Nollaa">
+<!ENTITY menu.up "Ylös">
+<!ENTITY menu.down "Alas">
+<!ENTITY import.label "Tuo Firefoxin kirjanmerkit">
+<!ENTITY export.label "Vie Googlen kirjanmerkit">
+<!ENTITY delete.label "Poista Googlen kirjanmerkit">
+<!ENTITY delete.tooltip "Sotkiko GMarks jotain? Kerro toki meille.">
+<!ENTITY editfilters.label "Muokkaa suotimia">
+<!ENTITY sort.label "Järjestä:">
+<!ENTITY sort.title "Nimi(aakkosjärjestys)">
+<!ENTITY sort.date "Päivämäärä">
+<!ENTITY sort.visits "Käynnit (Firefox historia)">
+<!ENTITY sort.clicks "Napautuksia">
+<!ENTITY accountinfo.label "Tilin asetukset">
+<!ENTITY alwaysuse "Käytä aina tätä tiliä">
+<!ENTITY alwaysuse.tooltip "Käyttää määrättyä tiliä vaikka olisit kirjautuneena toiseen tiliin">
+<!ENTITY nosignin "Osaan kirjautua itsekin, kiitos.">
+<!ENTITY options.other "Muut valinnat">
+<!ENTITY enableGMarksSuggest "Käytä GMarks ehdotusta">
+<!ENTITY showAddBookmark "Näytä lisää kirjanmerkki -nappi">
+<!ENTITY usectrld "Käytä Ctrl+D/Ctrl+Shift+D">
+<!ENTITY showIcons "Näytä kuvakkeet">
+<!ENTITY showFavicons "Näytä favicons-kuvakkeet">
+<!ENTITY validateFavicons "Varmenna favicon-kuvakkeet">
+<!ENTITY validateFavicons.tooltip "Tarkistaa löytyykö kirjanmerkille kuvaketta, poista käytöstä jos sinulla on paljon kirjanmerkkejä.">
+<!ENTITY showCount "Näytä laskuri">
+<!ENTITY httpsFavicons "Käytä https-favicons -kuvakkeita">
+<!ENTITY showrecent "Näytä 10 viimeisintä">
+<!ENTITY showfrequent "Näytä 10 suosituinta">
+<!ENTITY whatisthis "Mikä tämä on?">
+<!ENTITY nestedChar "Otsikoiden erottaja:">
+<!ENTITY disableQuickSearch "Pikahaku pois käytöstä">
+<!ENTITY qsTitle "Pikahaun pikanäppäin">
+<!ENTITY qsDescription "Paina jotain nappia tekstikentässä asettaaksesi sen pikanäppäimeksi">
+<!ENTITY HiddenLabels "Anna piilotettavat otsikot alle.">
+<!ENTITY unlabeledDescription "Oletusotsikko otsikottomille kohteille">
+<!ENTITY unlabeldDescrioption2 "Jätä tyhjäksi">
+<!ENTITY GoogleReader.description "Oletusotsikko Readerin tähdellä merkityille kohteille.">
+<!ENTITY GoogleReader.show "Näytä tähdellä merkityt kohteet GMarkissa.">
+<!ENTITY openinnewtab "Avaa aina uuteen välilehteen.">
+<!ENTITY toolbar.title "GMarks-työkalupalkki">
+<!ENTITY toolbar.hide "Piilota työkalupalkki">
+<!ENTITY toolbar.begining "Näytä ennen FF kirjanmerkkipalkkia">
+<!ENTITY toolbar.end "Näytä FF kirjanmerkkipalkin jälkeen">
+<!ENTITY toolbar.label "Työkalupalkin otsikko:">
+<!ENTITY toolbar.desc "Jätä tyhjäksi ja näytä kaikki kirjanmerkit.">
+<!ENTITY toolbar.showIconsOnly "Näytä vain kuvakkeet">
+<!ENTITY confirmBeforeDelete "Vahvista poistaminen">
+<!ENTITY bkmkLblCombos "Yhdistä kirjanmerkit ja otsikot">
+<!ENTITY bkmkLblCombos.details "Yhdistää samannimiset otsikot, kirjanmerkit ja ylemmät nimikkeet. Napautettaessa yhditettyä ryhmää, aukeaa merkitty sivusto ja napautettaessa + tai - merkkiä, aukeaa kansio.">
+<!ENTITY gmopts.tab.general "Yleiset">
+<!ENTITY gmopts.tab.display "Näkymä">
+<!ENTITY gmopts.tab.other "Muut">
+<!ENTITY caption.more "Lisää">
+<!ENTITY filters.tabs.filtersList "Suotimet">
+<!ENTITY filters.tabs.createFilter "Luo suodin">
+<!ENTITY filters.tabs.editFilter "Muokkaa suodinta">
+<!ENTITY filterList.description "Kaikille uusille kirjanmerkeille käytetään seuraavia suotimia:">
+<!ENTITY filter.bkmk.results "Tulokset tällä suotimella:">
+<!ENTITY createFilter.query "Haku">
+<!ENTITY createFilter.action "Toiminto">
+<!ENTITY field.name "Nimi:">
+<!ENTITY field.url "Osoite:">
+<!ENTITY field.labels "Otsikot:">
+<!ENTITY field.notes "Muistiinpanot:">
+<!ENTITY cQuery.all "Kaikki:">
+<!ENTITY cAction.description1 "Aloita merkillä ++ lisätäksesi nimi- tai muistiinpanokentän alkuun">
+<!ENTITY cAction.labels "Lisää otsikot:">
+<!ENTITY cAction.name "Muokka nimeä:">
+<!ENTITY cAction.url "Muokkaa osoitetta:">
+<!ENTITY cAction.notes "Lisää muistiinpano:">
+<!ENTITY cAction.delete "Poista (vain jo lisätyille)">
+<!ENTITY convertToNested "Muunna erilliset otsikot sisäkkäiseksi otsikoksi">
+<!ENTITY cAction.createFilter.label "Luo suodin">
+<!ENTITY cAction.cancel.label "Peruuta">
+<!ENTITY cAction.applyAll.label "Käytä myös alla oleville kirjanmerkeille:">
+<!ENTITY labels.howto "Erota otsikot pilkulla: Uutiset, Tehtävät, kesäloma">
+<!ENTITY qSearch.info "Kirjanmerkkien pikahaku (piilota painamalla kahdesti Home)">
+<!ENTITY addtoFFandGMarks "Molemmat">
+<!ENTITY organize "Järjestele GMarkseja">
+<!ENTITY org.file "Tiedosto">
+<!ENTITY org.file.accesskey "f">
+<!ENTITY org.file.import "Tuo">
+<!ENTITY org.file.export "Vie">
+<!ENTITY org.file.filters "Suotimet">
+<!ENTITY org.file.close "Sulje">
+<!ENTITY org.file.close.accesskey "c">
+<!ENTITY org.close.commandkey "w">
+<!ENTITY details.name "Nimi">
+<!ENTITY details.url "Sijainti">
+<!ENTITY details.notes "Muistiinpanot">
+<!ENTITY details.labels "Otsikot">
+<!ENTITY details.dateAdded "Lisätty pvm">
+<!ENTITY details.visited "Vierailtu">
+<!ENTITY details.lastVisited "Vierailtu viimeksi">
+<!ENTITY gmarks.loading "Ladataan...">
