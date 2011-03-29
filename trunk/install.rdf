@@ -9,7 +9,7 @@
   <RDF:Description RDF:about="urn:mozilla:install-manifest"
                    em:id="{A64F9D1E-FA5E-11DA-A187-6B94C2ED2B83}"
                    em:name="GMarks"
-                   em:version="1.0.2.1"
+                   em:version="1.0.2.2"
                    em:creator="John Marshall"
                    em:description="Shows your google bookmarks in the sidebar."
                    em:homepageURL="https://addons.mozilla.org/en-US/firefox/addon/2888"
