@@ -575,14 +575,17 @@ function createBookmarkItem(elementType,bkmk){
   btn.addEventListener('command',function(event){
       var url=event.target.getAttribute('value');
       openGMark(url,event);
-      if (event.target.parentNode.hidePopup)
-        event.target.parentNode.hidePopup();
+      /** Bug #3 -toolbar Bookmarks icon won't open after submenu item opened
+		if (event.target.parentNode.hidePopup)
+			event.target.parentNode.hidePopup();
+		*/
     },false);
   btn.addEventListener('click',function(event){
       if (event.button==1){
         var url=event.target.getAttribute('value');
         openGMark(url,event);
-        var last = null;
+        /** Bug #3 -toolbar Bookmarks icon won't open after submenu item opened
+		var last = null;
         var cur = event.target.parentNode;
         while(cur && (cur.tagName == "popup" || cur.tagName == "menupopup" || cur.tagName == "menu" || (cur.tagName=="button" && cur.type=="menu"))){
           if (cur.tagName == "popup" || cur.tagName == "menupopup"){
@@ -592,6 +595,7 @@ function createBookmarkItem(elementType,bkmk){
         }
         if (last)
           last.hidePopup();
+		 */
       }
     },false);
   btn.setAttribute('context',"gm-bookmarkPopup");
