@@ -12,7 +12,7 @@
       <key id="key_GMOpenSidebar" command="viewGmarksSidebar" key="m" modifiers="alt"/>
   </keyset>
   <popupset>
-    <popup id="gm-bookmarkPopup">
+    <popup id="gm-bookmarkPopup" style="padding:1px;background-color: white;border: 1px solid gray;">
       <menuitem label="&bkmk.open;" oncommand="openUILinkIn(GM.getURL(),'current');"/>
       <menuitem label="&bkmk.openTab;" oncommand="openUILinkIn(GM.getURL(),'tab');"/>
       <menuitem label="&bkmk.openWindow;" oncommand="openUILinkIn(GM.getURL(),'window');"/>
@@ -26,7 +26,7 @@
       <menuitem label="&bkmk.edit;" oncommand="GM.onEditBookmark(GM.getURL());"/>
     </popup>
 
-    <popup id="gm-labelPopup">
+    <popup id="gm-labelPopup" style="padding:1px;background-color: white;border: 1px solid gray;">
         <menuitem label="&lbl.tabs;" accesskey="&lbl.tabs.key;" oncommand="openGMarkLabelInTabs();"/>
         <menuitem label="&lbl.addhere;" accesskey="&lbl.addhere.key;" oncommand="GM.addGMark(null,null,getGMarksLabel());" id="GM_addHere"/>
     </popup>

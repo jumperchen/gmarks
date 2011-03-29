@@ -40,7 +40,7 @@
       <key id="key_undo" key="z"   modifiers="accel"  command="cmd_undo"/>
   </keyset>
   <popupset id="gmarksPopupset">
-    <popup id="gm-contextPopup" onpopupshowing="return gmTreeContextShowing(event);">
+    <popup id="gm-contextPopup" onpopupshowing="return gmTreeContextShowing(event);" style="padding:1px;background-color: white;border: 1px solid gray;">
       <menuitem id="lbltabs" label="&lbl.tabs;" accesskey="&lbl.tabs.key;" oncommand="openInTabs(event);"/>
       <menuitem id="bkmkopen" label="&bkmk.open;" oncommand="openBookmarks(event)"/>
       <menuitem id="bkmktab" label="&bkmk.openTab;" oncommand="openInTabs(event)"/>
