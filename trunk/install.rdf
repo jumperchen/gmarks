@@ -14,7 +14,7 @@
                    em:description="Shows your google bookmarks in the sidebar."
                    em:homepageURL="https://addons.mozilla.org/en-US/firefox/addon/2888"
                    em:optionsURL="chrome://gmarks/content/options.xul"
-                   em:contributor="Thibaut Souilliart (French translation)">
+                   em:contributor="Thibaut Souilliart (French translation), Jumper Chen">
     <em:targetApplication RDF:resource="rdf:#$Wb+XL2"/>
   </RDF:Description>
 </RDF:RDF>
