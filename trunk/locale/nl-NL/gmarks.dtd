@@ -1,0 +1,154 @@
+<!ENTITY extension.title "GMarks">
+<!ENTITY gmarks.service "Google Bladwijzers">
+<!ENTITY addbkmk.visibility "Zichtbaarheid:">
+<!ENTITY addbkmk.visibility.option1 "Persoonlijk">
+<!ENTITY addbkmk.visibility.option2 "Openbaar">
+<!ENTITY submissonError "Er is een fout opgetreden bij het indienen van de volgende bladwijzer bij Google:">
+<!ENTITY refresh "Vernieuwen">
+<!ENTITY bkmk.open "Openen">
+<!ENTITY bkmk.openTab "In nieuw tabblad openen">
+<!ENTITY bkmk.openWindow "In nieuw venster openen">
+<!ENTITY bkmk.edit "Eigenschappen">
+<!ENTITY bkmk.changefavicon "Favicon wijzigen">
+<!ENTITY bkmk.rename "Hernoemen">
+<!ENTITY bkmk.updateURL "URL bijwerken">
+<!ENTITY bkmk.removelbl "Label verwijderen">
+<!ENTITY bkmk.newlbl "Nieuwe labels toevoegen...">
+<!ENTITY bkmk.del "Verwijderen">
+<!ENTITY lbl.tabs "In tabbladen openen">
+<!ENTITY lbl.tabs.key "O">
+<!ENTITY lbl.addhere "Bladwijzer hier toevoegen">
+<!ENTITY lbl.addhere.key "a">
+<!ENTITY lbl.rename "Hernoemen">
+<!ENTITY lbl.rename.key "r">
+<!ENTITY lbl.dellbl "Label verwijderen">
+<!ENTITY lbl.dellbl.key "d">
+<!ENTITY lbl.delbkmk "Bladwijzers verwijderen">
+<!ENTITY lbl.delbkmk.key "B">
+<!ENTITY lbl.expand "Uitbreiden">
+<!ENTITY addbkmk.label "Bladwijzer toevoegen">
+<!ENTITY search.label "Zoeken:">
+<!ENTITY search.key "Z">
+<!ENTITY notsignedon "U bent niet ingelogd op uw Google Account">
+<!ENTITY email "E-mail:">
+<!ENTITY pass "Wachtwoord:">
+<!ENTITY autosignin "Automatisch inloggen">
+<!ENTITY autosignin.tooltip "Logt alleen maar in als u niet bent ingelogd">
+<!ENTITY signin "Inloggen">
+<!ENTITY signout "Uitloggen">
+<!ENTITY retry "Opnieuw proberen">
+<!ENTITY star.tooltip "Opent GMarks in de zijbalk">
+<!ENTITY GMarks.add "GMark toevoegen">
+<!ENTITY GMarks.quickAdd "Snel GMark toevoegen">
+<!ENTITY GMarks.quickAdd.tooltip "GMark toevoegen (Bladwijzer toevoegen-venster overslaan)">
+<!ENTITY tree.colTitle "Google Bladwijzers">
+<!ENTITY sidebar.title "GMarks">
+<!ENTITY pref.main.title "Hoofdvenster">
+<!ENTITY options.title "Opties">
+<!ENTITY options.sidebar "Zijbalk">
+<!ENTITY options.toolbar "Werkbalk">
+<!ENTITY options.menu "Menu">
+<!ENTITY options.misc "Overig">
+<!ENTITY bkmksmenu.hide "Menu Bladwijzers verbergen">
+<!ENTITY gmarksmenu.enable "Menu GMarks inschakelen">
+<!ENTITY gmarksmenu.rename "Menu GMarks hernoemen naar Bladwijzers">
+<!ENTITY menu.title "GMarks">
+<!ENTITY menu.accesskey "k">
+<!ENTITY menu.add "Toevoegen">
+<!ENTITY menu.remove "Verwijderen">
+<!ENTITY menu.reset "Reset">
+<!ENTITY menu.up "Omhoog">
+<!ENTITY menu.down "Omlaag">
+<!ENTITY import.label "Firefox Bladwijzers importeren">
+<!ENTITY export.label "Google Bladwijzers exporteren">
+<!ENTITY delete.label "Google Bladwijzers verwijderen">
+<!ENTITY delete.tooltip "Heeft GMarks er een rommeltje van gemaakt? Laat het me a.u.b. weten.">
+<!ENTITY editfilters.label "Filters bewerken">
+<!ENTITY sort.label "Sorteren op:">
+<!ENTITY sort.title "Titel (alfabetisch)">
+<!ENTITY sort.date "Datum">
+<!ENTITY sort.visits "Bezoeken (Firefox Geschiedenis)">
+<!ENTITY sort.clicks "Bladwijzers geklikt">
+<!ENTITY accountinfo.label "Accountvoorkeuren">
+<!ENTITY alwaysuse "Altijd deze account gebruiken">
+<!ENTITY alwaysuse.tooltip "Benadert de gespecificeerde account, zelfs als u bent ingelogd op een andere account">
+<!ENTITY nosignin "Ik kan zelf wel inloggen, bedankt.">
+<!ENTITY options.other "Overige opties">
+<!ENTITY enableGMarksSuggest "GMarks Suggesties inschakelen">
+<!ENTITY showAddBookmark "Bladwijzer toevoegen-knop weergeven">
+<!ENTITY usectrld "Ctrl+D/Ctrl+Shift+D ondersteuning inschakelen">
+<!ENTITY showIcons "Pictogrammen weergeven">
+<!ENTITY showFavicons "Favicons weergeven">
+<!ENTITY validateFavicons "Favicons valideren">
+<!ENTITY validateFavicons.tooltip "Controleert of een favicon bestaat voor de bladwijzer; schakel dit uit indien u veel bladwijzers heeft.">
+<!ENTITY showCount "Aantal bladwijzers weergeven">
+<!ENTITY httpsFavicons "HTTPS favicons inschakelen">
+<!ENTITY showrecent "De 10 meest recente weergeven">
+<!ENTITY showfrequent "De 10 vaakst bezochte weergeven">
+<!ENTITY whatisthis "Wat is dit?">
+<!ENTITY nestedChar "Geneste labels scheidingsteken:">
+<!ENTITY disableQuickSearch "Snel zoeken uitschakelen">
+<!ENTITY qsTitle "Snel zoeken sneltoets">
+<!ENTITY qsDescription "Druk op een willekeurige toets in het tekstveld om de sneltoets voor snel zoeken te wijzigen">
+<!ENTITY HiddenLabels "Voer hieronder labels in die verborgen moeten worden">
+<!ENTITY unlabeledDescription "Standaardlabel wanneer label ontbreekt">
+<!ENTITY unlabeldDescrioption2 "Laat leeg voor geen extra label">
+<!ENTITY GoogleReader.description "Standaardlabel voor onderdelen met ster in Reader.">
+<!ENTITY GoogleReader.show "Onderdelen met ster weergeven in Gmarks.">
+<!ENTITY openinnewtab "Altijd in nieuw tabblad openen.">
+<!ENTITY toolbar.title "GMarks werkbalk">
+<!ENTITY toolbar.hide "Werkbalk niet weergeven">
+<!ENTITY toolbar.begining "Weergeven voor de Firefox Bladwijzerswerkbalk">
+<!ENTITY toolbar.end "Weergeven na de Firefox Bladwijzerswerkbalk">
+<!ENTITY toolbar.label "Werkbalk label:">
+<!ENTITY toolbar.desc "Laat leeg om alle bladwijzers weer te geven.">
+<!ENTITY toolbar.showIconsOnly "Alleen pictogrammen weergeven">
+<!ENTITY confirmBeforeDelete "Bevestigen voor verwijderen">
+<!ENTITY bkmkLblCombos "Bladwijzer+label combinaties inschakelen">
+<!ENTITY bkmkLblCombos.details "Voegt labels en bladwijzers met identieke namen en bovenliggende labels samen. Wanneer op de samengevoegde groep wordt geklikt wordt de bladwijzersite geopend; wanneer op het wisselteken (+ of -) wordt geklikt wordt de map geopend.">
+<!ENTITY gmopts.tab.general "Algemeen">
+<!ENTITY gmopts.tab.display "Weergave">
+<!ENTITY gmopts.tab.other "Overig">
+<!ENTITY caption.more "Meer">
+<!ENTITY filters.tabs.filtersList "Filters">
+<!ENTITY filters.tabs.createFilter "Filter aanmaken">
+<!ENTITY filters.tabs.editFilter "Filter bewerken">
+<!ENTITY filterList.description "De volgende filters worden toegepast op alle nieuwe bladwijzers:">
+<!ENTITY filter.bkmk.results "Bladwijzerresultaten voor dit filter:">
+<!ENTITY createFilter.query "Zoeken">
+<!ENTITY createFilter.action "Actie">
+<!ENTITY field.name "Naam:">
+<!ENTITY field.url "URL:">
+<!ENTITY field.labels "Labels:">
+<!ENTITY field.notes "Opmerkingen:">
+<!ENTITY cQuery.all "Alles:">
+<!ENTITY cAction.description1 "Begin met ++ om aan het begin van het naam- of opmerkingenveld toe te voegen.">
+<!ENTITY cAction.labels "Labels toevoegen:">
+<!ENTITY cAction.name "Naam bewerken:">
+<!ENTITY cAction.url "URL bewerken:">
+<!ENTITY cAction.notes "Opmerkingen toevoegen:">
+<!ENTITY cAction.delete "Verwijderen (voor pagina&apos;s waarvan al een bladwijzer is gemaakt)">
+<!ENTITY convertToNested "Meerdere labels in één ingebed label omzetten">
+<!ENTITY cAction.createFilter.label "Filter aanmaken">
+<!ENTITY cAction.cancel.label "Stoppen">
+<!ENTITY cAction.applyAll.label "Ook toepassen op onderstaande bladwijzers:">
+<!ENTITY labels.howto "Labels met een komma scheiden: Nieuws, Te doen, Zomervakantie">
+<!ENTITY qSearch.info "Snel bladwijzer zoeken (druk twee keer op de Home toets om dit te verbergen)">
+<!ENTITY addtoFFandGMarks "Beide">
+<!ENTITY organize "GMarks organiseren">
+<!ENTITY org.file "Bestand">
+<!ENTITY org.file.accesskey "B">
+<!ENTITY org.file.import "Importeren">
+<!ENTITY org.file.export "Exporteren">
+<!ENTITY org.file.filters "Filters">
+<!ENTITY org.file.close "Sluiten">
+<!ENTITY org.file.close.accesskey "S">
+<!ENTITY org.close.commandkey "w">
+<!ENTITY details.name "Naam">
+<!ENTITY details.url "Locatie">
+<!ENTITY details.notes "Opmerkingen">
+<!ENTITY details.labels "Labels">
+<!ENTITY details.dateAdded "Datum toegevoegd">
+<!ENTITY details.visited "Bezocht">
+<!ENTITY details.lastVisited "Laatst bezocht">
+<!ENTITY gmarks.loading "Laden...">

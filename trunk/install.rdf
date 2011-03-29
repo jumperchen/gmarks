@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="rdf:#$Wb+XL2"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="3.0"
+                   em:maxVersion="4.0.*" />
+  <RDF:Description RDF:about="urn:mozilla:install-manifest"
+                   em:id="{A64F9D1E-FA5E-11DA-A187-6B94C2ED2B83}"
+                   em:name="GMarks"
+                   em:version="1.0.2.1"
+                   em:creator="John Marshall"
+                   em:description="Shows your google bookmarks in the sidebar."
+                   em:homepageURL="https://addons.mozilla.org/en-US/firefox/addon/2888"
+                   em:optionsURL="chrome://gmarks/content/options.xul"
+                   em:contributor="Thibaut Souilliart (French translation)">
+    <em:targetApplication RDF:resource="rdf:#$Wb+XL2"/>
+  </RDF:Description>
+</RDF:RDF>

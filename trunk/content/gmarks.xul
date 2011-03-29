@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://gmarks/skin/style.css" type="text/css"?>
+<?xml-stylesheet href="chrome://gmarks/skin/service.css" type="text/css"?>
+<!DOCTYPE window SYSTEM "chrome://gmarks/locale/gmarks.dtd">
+
+<overlay
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <script type="application/x-javascript" src="chrome://gmarks/content/gmarks.js"/>
+  <script type="application/x-javascript" src="chrome://gmarks/content/treeBuilder.js"/>
+  <keyset id="mainKeyset">
+      <key id="key_GMOpenSidebar" command="viewGmarksSidebar" key="m" modifiers="alt"/>
+  </keyset>
+  <popupset>
+    <popup id="gm-bookmarkPopup">
+      <menuitem label="&bkmk.open;" oncommand="openUILinkIn(GM.getURL(),'current');"/>
+      <menuitem label="&bkmk.openTab;" oncommand="openUILinkIn(GM.getURL(),'tab');"/>
+      <menuitem label="&bkmk.openWindow;" oncommand="openUILinkIn(GM.getURL(),'window');"/>
+      <menuseparator/>
+      <menuitem label="&bkmk.rename;" oncommand="GMS.onRenameBookmark(GM.getURL(),null,true);"/>
+      <menuitem label="&bkmk.updateURL;" oncommand="GM.updateURL(GM.getURL());"/>
+      <menuitem label="&bkmk.removelbl;" oncommand="GMS.removeLabelFromBookmark(GM.getURL(),getGMarksLabel(),true);"/>
+      <menuitem label="&bkmk.newlbl;" oncommand="GMS.addLabelToBookmark(GM.getURL(),null,true);"/>
+      <menuitem label="&bkmk.del;" oncommand="GMS.onRemoveBookmark(GM.getURL(),true,true);"/>
+      <menuseparator/>
+      <menuitem label="&bkmk.edit;" oncommand="GM.onEditBookmark(GM.getURL());"/>
+    </popup>
+
+    <popup id="gm-labelPopup">
+        <menuitem label="&lbl.tabs;" accesskey="&lbl.tabs.key;" oncommand="openGMarkLabelInTabs();"/>
+        <menuitem label="&lbl.addhere;" accesskey="&lbl.addhere.key;" oncommand="GM.addGMark(null,null,getGMarksLabel());" id="GM_addHere"/>
+    </popup>
+  </popupset>
+  <menubar id="main-menubar">
+    <menu id="gmarksMenu" label="&menu.title;" name="&menu.title;" accesskey="&menu.accesskey;" insertbefore="tools-menu">
+      <menupopup id="gmarksMenuPopup">
+
+      </menupopup>
+    </menu>
+  </menubar>
+  <toolbarpalette id="BrowserToolbarPalette">
+    <toolbaritem id="gbookmark_set">
+          <toolbarbutton id="GM-star"
+            onmouseover="GM.starMouseMove(true);"
+            onmouseout="GM.starMouseMove(false);"
+            label="&extension.title;"
+            oncommand="toggleSidebar('viewGmarksSidebar');"
+            onclick="GM.addRemove(event);"
+            tooltiptext="&star.tooltip;"
+            class="star-off"
+              />
+      </toolbaritem>
+      <toolbaritem id="gmarksToolbar">
+        <toolbarbutton id="gmarksToolbarIcon" label="&toolbar.title;" show-text="always">
+
+        </toolbarbutton>
+      </toolbaritem>
+      <toolbarbutton
+        id="gmarksAddBookmark"
+        label="&GMarks.add;"
+        tooltiptext="&GMarks.add;"
+        oncommand="GM.addGMark()"
+        class="gmarks-addgmarkbutton"
+      />
+      <toolbarbutton
+        id="gmarksQuickAddBookmark"
+        label="&GMarks.quickAdd;"
+        tooltiptext="&GMarks.quickAdd.tooltip;"
+        oncommand="GM.quickAddGMark()"
+        class="gmarks-addgmarkbutton"
+      />
+  </toolbarpalette>
+  <broadcasterset id="mainBroadcasterSet">
+    <broadcaster id="viewGmarksSidebar"
+        autoCheck="false"
+        label="&extension.title;"
+        type="checkbox"
+        group="sidebar"
+        sidebarurl="chrome://gmarks/content/gmarksSidebar.xul"
+        sidebartitle="&sidebar.title;"
+        oncommand="toggleSidebar('viewGmarksSidebar');"
+        key="key_GMOpenSidebar"
+    />
+  </broadcasterset>
+  <menupopup id="viewSidebarMenu">
+    <menuitem key="key_openSidebar" accesskey='g' observes="viewGmarksSidebar" />
+  </menupopup>
+</overlay>

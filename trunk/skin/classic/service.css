@@ -1,0 +1,29 @@
+.gmarks-addgmarkbutton {
+	-moz-box-align: center;
+	-moz-box-orient: vertical;
+	padding-right: 0px;
+}
+#GM-star{
+	-moz-box-align: center;
+	-moz-box-flex: 1;
+	-moz-box-orient: vertical;
+}
+#GM-star.star-on{
+	list-style-image: url("chrome://gmarks/skin/star.gif");
+}
+toolbar[iconsize="small"] #GM-star.star-on {
+    list-style-image: url("chrome://gmarks/skin/star.gif");
+}
+#GM-star.star-off{
+	list-style-image: url("chrome://gmarks/skin/star_off.gif");
+}
+toolbar[iconsize="small"] #GM-star.star-off {
+    list-style-image: url("chrome://gmarks/skin/star_off.gif");
+}
+#gmarksToolbarIcon {
+  list-style-image: url("chrome://gmarks/skin/star_off.gif");
+}
+
+toolbar[iconsize="small"] #gmarksToolbarIcon {
+  list-style-image: url("chrome://gmarks/skin/star_off.gif");
+}

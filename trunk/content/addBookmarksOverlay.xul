@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://gmarks/skin/style.css" type="text/css"?>
+<!DOCTYPE window SYSTEM "chrome://gmarks/locale/gmarks.dtd">
+
+<overlay id="gAddBookmarkOverlay"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<script type="application/x-javascript" src="chrome://gmarks/content/addeditbookmark.js"/>
+	<script type="application/x-javascript" src="chrome://gmarks/content/filters.js" />
+	<script type="application/x-javascript" src="chrome://gmarks/content/addBookmarksOverlay.js"/>
+	<popupset>
+		<popup id="labelAutoComplete-popup" ignorekeys="true" position="after_start" class="autoCompletePopup" 
+			onkeypress="popupKeypress(event);"/>
+	</popupset>
+	<tabbox flex="1">
+ 		<tabs onselect="TabSelected();">
+  			<tab label="Firefox"/>
+  			<tab label="&gmarks.service;"/>
+  			<checkbox label="&addtoFFandGMarks;" id="addToBoth" disabled="false"/>
+ 		 </tabs>
+ 		 <tabpanels flex="1">
+  			<tabpanel id="firefoxAddBookmark"  orient="vertical" flex="1">
+
+  			</tabpanel>
+  			<tabpanel id="gmarksAddBookmark" orient="vertical" flex="1">
+  				<grid id="gmarksgrid" flex="1">
+					<columns>
+						<column/>
+						<column flex="1"/>
+					</columns>
+			
+					<rows id="GMarksRows" flex="1">
+						<row>
+							<label control="nameBox" value="&field.name;"/>
+							<textbox id="nameBox" flex="1" spellcheck="true"/>
+						</row>
+						<row>
+							<label control="urlBox" value="&field.url;"/>
+							<textbox id="urlBox" flex="1" type="autocomplete" autocompletesearch="history"/>
+						</row>
+						<row>
+							<label control="labelsBox" value="&field.labels;" style="padding-top: 2px;"/>
+			 				<vbox>
+			 					<hbox align="center">
+			 						<label id="lblLabels" hidden="true" class="edit-lblLabels"/>
+			 						<textbox id="labelsBox" flex="1"  spellcheck="true"
+			 							onkeypress="handleKeypress(event);"
+			 							onblur="hidePopup();"
+			 							oninput="doLabelAutoComplete();"/>
+			 					</hbox>
+			 					<label value="&labels.howto;"/>
+			 				</vbox>
+						</row>
+						<row id="visRow" hidden="true">
+							<label control="visList" value="&addbkmk.visibility;"/>
+							<menulist id="visList" value="0" flex="1">
+							  <menupopup>
+							    <menuitem label="&addbkmk.visibility.option1;"/>
+							    <menuitem label="&addbkmk.visibility.option2;"/>
+							  </menupopup>
+							</menulist>
+						</row>
+						<row flex="1">
+							<label control="notesBox" value="&field.notes;"/>
+							<textbox id="notesBox" flex="1" multiline="true" spellcheck="true"/>
+						</row>
+					</rows>
+				</grid>
+  			</tabpanel>
+  		</tabpanels>
+	</tabbox>
+</overlay>

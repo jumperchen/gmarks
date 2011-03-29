@@ -1,0 +1,154 @@
+<!ENTITY extension.title "GMarks">
+<!ENTITY gmarks.service "Semne de carte Google">
+<!ENTITY addbkmk.visibility "Vizibilitate:">
+<!ENTITY addbkmk.visibility.option1 "Privat">
+<!ENTITY addbkmk.visibility.option2 "Public">
+<!ENTITY submissonError "A apărut o eroare la salvarea următorului semn în Google Bookmarks:">
+<!ENTITY refresh "Reîmprospătare">
+<!ENTITY bkmk.open "Deschide">
+<!ENTITY bkmk.openTab "Deschide în filă nouă">
+<!ENTITY bkmk.openWindow "Deschide în fereastră nouă">
+<!ENTITY bkmk.edit "Proprietăți">
+<!ENTITY bkmk.changefavicon "Schimbă iconiţa">
+<!ENTITY bkmk.rename "Redenumește">
+<!ENTITY bkmk.updateURL "Actualizează adresa URL">
+<!ENTITY bkmk.removelbl "Elimină eticheta">
+<!ENTITY bkmk.newlbl "Adaugă etichete noi...">
+<!ENTITY bkmk.del "Șterge">
+<!ENTITY lbl.tabs "Deschide în file">
+<!ENTITY lbl.tabs.key "D">
+<!ENTITY lbl.addhere "Pune aici un semn de carte">
+<!ENTITY lbl.addhere.key "P">
+<!ENTITY lbl.rename "Redenumește">
+<!ENTITY lbl.rename.key "r">
+<!ENTITY lbl.dellbl "Șterge eticheta">
+<!ENTITY lbl.dellbl.key "t">
+<!ENTITY lbl.delbkmk "Șterge semnele de carte">
+<!ENTITY lbl.delbkmk.key "s">
+<!ENTITY lbl.expand "Extinde">
+<!ENTITY addbkmk.label "Adaugă semn de carte">
+<!ENTITY search.label "Caută:">
+<!ENTITY search.key "C">
+<!ENTITY notsignedon "Nu sunteți autentificat(ă) în contul dumneavoastră Google.">
+<!ENTITY email "Email:">
+<!ENTITY pass "Parolă:">
+<!ENTITY autosignin "Autentificare automată">
+<!ENTITY autosignin.tooltip "Vă autentifică numai dacă nu sunteți autentificat">
+<!ENTITY signin "Autentificare">
+<!ENTITY signout "Deconectare">
+<!ENTITY retry "Încearcă din nou">
+<!ENTITY star.tooltip "Deschide GMarks în bara laterală">
+<!ENTITY GMarks.add "Adaugă GMark">
+<!ENTITY GMarks.quickAdd "Adăugare rapidă GMark">
+<!ENTITY GMarks.quickAdd.tooltip "Adaugă GMark (Sări peste fereastra de adăugare)">
+<!ENTITY tree.colTitle "Semne de carte Google">
+<!ENTITY sidebar.title "GMarks">
+<!ENTITY pref.main.title "General">
+<!ENTITY options.title "Opțiuni">
+<!ENTITY options.sidebar "Bară laterală">
+<!ENTITY options.toolbar "Bară de unelte">
+<!ENTITY options.menu "Meniu">
+<!ENTITY options.misc "Diverse">
+<!ENTITY bkmksmenu.hide "Ascunde meniul „Semne de carte”">
+<!ENTITY gmarksmenu.enable "Activează meniu GMarks">
+<!ENTITY gmarksmenu.rename "Redenumește meniul GMarks în Semne de carte">
+<!ENTITY menu.title "GMarks">
+<!ENTITY menu.accesskey "G">
+<!ENTITY menu.add "Adaugă">
+<!ENTITY menu.remove "Elimină">
+<!ENTITY menu.reset "Resetează">
+<!ENTITY menu.up "Sus">
+<!ENTITY menu.down "Jos">
+<!ENTITY import.label "Importă semnele din Firefox">
+<!ENTITY export.label "Exportă semnele din Google">
+<!ENTITY delete.label "Șterge semnele Google">
+<!ENTITY delete.tooltip "A stricat ceva GMarks? Vă rog să-mi spuneți.">
+<!ENTITY editfilters.label "Editează filtrele">
+<!ENTITY sort.label "Sortează după:">
+<!ENTITY sort.title "Titlu (alfabetic)">
+<!ENTITY sort.date "Dată">
+<!ENTITY sort.visits "Vizite (Istoric Firefox)">
+<!ENTITY sort.clicks "Clicuri pe semn">
+<!ENTITY accountinfo.label "Preferințe cont">
+<!ENTITY alwaysuse "Folosește întotdeauna acest cont">
+<!ENTITY alwaysuse.tooltip "Accesează contul specificat și când sunteți autentificat în alt cont">
+<!ENTITY nosignin "Mă autentific singur, mulțumesc.">
+<!ENTITY options.other "Alte opțiuni">
+<!ENTITY enableGMarksSuggest "Activează sugestiile GMarks">
+<!ENTITY showAddBookmark "Arată butonul adaugă semn de carte">
+<!ENTITY usectrld "Activează suport pentru Ctrl+D/Ctrl+Shift+D">
+<!ENTITY showIcons "Arată icoanele">
+<!ENTITY showFavicons "Arată icoanele pentru favorite">
+<!ENTITY validateFavicons "Validează icoanele pentru favorite">
+<!ENTITY validateFavicons.tooltip "Verifică dacă există icoana pentru favorite, dezactivați opțiunea dacă aveți multe semne de carte.">
+<!ENTITY showCount "Arată numărul de semne de carte">
+<!ENTITY httpsFavicons "Permite icoane favorite https">
+<!ENTITY showrecent "Arată 10 din cele recente">
+<!ENTITY showfrequent "Arată 10 din cele frecvent vizitate">
+<!ENTITY whatisthis "Ce e asta?">
+<!ENTITY nestedChar "Separator pentru ierarhia etichetelor">
+<!ENTITY disableQuickSearch "Dezactivează căutarea rapidă">
+<!ENTITY qsTitle "Scurtătură pentru căutare rapidă">
+<!ENTITY qsDescription "Apăsați orice tastă în căsuța de mai jos pentru a schimba scurtătura pentru căutare rapidă">
+<!ENTITY HiddenLabels "Introduceți etichetele de ascuns mai jos.">
+<!ENTITY unlabeledDescription "Eticheta implicită pentru cele care nu au etichetă">
+<!ENTITY unlabeldDescrioption2 "Lăsați gol pentru nicio etichetă extra">
+<!ENTITY GoogleReader.description "Eticheta implicită pentru elementele cu steluță din GoogleReader">
+<!ENTITY GoogleReader.show "Arată elementele cu steluță în GMarks.">
+<!ENTITY openinnewtab "Deschide întotdeauna într-o filă nouă.">
+<!ENTITY toolbar.title "Bara GMarks">
+<!ENTITY toolbar.hide "Nu arăta bara de unelte">
+<!ENTITY toolbar.begining "Arată înaintea barei pentru semne de carte din FF">
+<!ENTITY toolbar.end "Arată după bara pentru semne de carte din FF">
+<!ENTITY toolbar.label "Etichetă pentru bară:">
+<!ENTITY toolbar.desc "Lăsați gol pentru a arăta toate semnele.">
+<!ENTITY toolbar.showIconsOnly "Arată doar icoane">
+<!ENTITY confirmBeforeDelete "Confirmă înainte de ștergere">
+<!ENTITY bkmkLblCombos "Activează combinația Semn de carte + Etichetă">
+<!ENTITY bkmkLblCombos.details "Merges labels and bookmarks with the same names and parent labels, when clicking on the merged group, it opens the bookmarked site, when clicking on the twisty(+ or - sign), it opens the folder">
+<!ENTITY gmopts.tab.general "General">
+<!ENTITY gmopts.tab.display "Afișare">
+<!ENTITY gmopts.tab.other "Altele">
+<!ENTITY caption.more "Mai mult">
+<!ENTITY filters.tabs.filtersList "Filtre">
+<!ENTITY filters.tabs.createFilter "Creează filtru">
+<!ENTITY filters.tabs.editFilter "Editare filtru">
+<!ENTITY filterList.description "Următorele filtre sunt aplicate noilor semne de carte:">
+<!ENTITY filter.bkmk.results "Semne de carte potrivite acestui filtru:">
+<!ENTITY createFilter.query "Interogare">
+<!ENTITY createFilter.action "Acțiune">
+<!ENTITY field.name "Nume:">
+<!ENTITY field.url "URL:">
+<!ENTITY field.labels "Etichete:">
+<!ENTITY field.notes "Note:">
+<!ENTITY cQuery.all "Toate:">
+<!ENTITY cAction.description1 "Begin with ++ to add to the begining of the name or notes field.">
+<!ENTITY cAction.labels "Adaugă etichete:">
+<!ENTITY cAction.name "Editează nume:">
+<!ENTITY cAction.url "Editează URL:">
+<!ENTITY cAction.notes "Adaugă note:">
+<!ENTITY cAction.delete "Delete (For those already bookmarked)">
+<!ENTITY convertToNested "Turn multiple labels into one nested label">
+<!ENTITY cAction.createFilter.label "Creează filtru">
+<!ENTITY cAction.cancel.label "Anulează">
+<!ENTITY cAction.applyAll.label "Also apply to the bookmarks below:">
+<!ENTITY labels.howto "Separate labels with a comma: News, To do, summer vacation">
+<!ENTITY qSearch.info "Căutare rapidă în semne (">
+<!ENTITY addtoFFandGMarks "Amândouă">
+<!ENTITY organize "Organizează GMarks">
+<!ENTITY org.file "Fișier">
+<!ENTITY org.file.accesskey "f">
+<!ENTITY org.file.import "Importă">
+<!ENTITY org.file.export "Exportă">
+<!ENTITY org.file.filters "Filtre">
+<!ENTITY org.file.close "Închide">
+<!ENTITY org.file.close.accesskey "c">
+<!ENTITY org.close.commandkey "w">
+<!ENTITY details.name "Nume">
+<!ENTITY details.url "Adresă">
+<!ENTITY details.notes "Note">
+<!ENTITY details.labels "Etichete">
+<!ENTITY details.dateAdded "Data adăugării">
+<!ENTITY details.visited "Vizitatat">
+<!ENTITY details.lastVisited "Ultima vizită">
+<!ENTITY gmarks.loading "Se încarcă...">

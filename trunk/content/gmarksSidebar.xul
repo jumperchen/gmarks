@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://browser/skin/browser.css" type="text/css"?>
+<?xml-stylesheet href="chrome://gmarks/skin/style.css" type="text/css"?>
+<?xml-stylesheet href="chrome://gmarks/skin/gmarksff3-mac.css" type="text/css"?>
+<!--chrome://browser/skin/browser.css-->
+
+<!DOCTYPE window SYSTEM "chrome://gmarks/locale/gmarks.dtd">
+
+<page onload="doSidebarLoad();" onunload="doSidebarUnload();"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <script type="application/x-javascript" src="chrome://browser/content/utilityOverlay.js"/>
+  <script type="application/x-javascript" src="chrome://gmarks/content/control.js"/>
+  <script type="application/x-javascript" src="chrome://gmarks/content/sidebar.js"/>
+  <script type="application/x-javascript" src="chrome://gmarks/content/treeBuilder.js"/>
+
+  <script type="application/x-javascript" src="chrome://global/content/nsTransferable.js"/>
+  <script type="application/x-javascript" src="chrome://global/content/nsDragAndDrop.js"/>
+  <script type="application/x-javascript" src="chrome://gmarks/content/dragndrop.js"/>
+
+  <commandset>
+    <command id="cmd_undo" oncommand="GMS.undoLastAction();"/>
+  </commandset>
+  <keyset id="gmarksSidebarKeyset">
+      <key id="key_undo" key="z"   modifiers="accel"  command="cmd_undo"/>
+  </keyset>
+  <stringbundleset id="stringbundleset">
+     <stringbundle id="gmarksBundle" src="chrome://gmarks/locale/gmarks.properties"/>
+  </stringbundleset>
+
+  <popupset>
+    <popup id="gm-contextPopup" onpopupshowing="return gmTreeContextShowing(event);">
+      <menuitem id="lbltabs" label="&lbl.tabs;" accesskey="&lbl.tabs.key;" oncommand="openInTabs(event);"/>
+      <menuitem id="bkmkopen" label="&bkmk.open;" oncommand="openBookmarks(event)"/>
+      <menuitem id="bkmktab" label="&bkmk.openTab;" oncommand="openBookmarksIn(event,'tab')"/>
+      <menuitem id="bkmkwindow" label="&bkmk.openWindow;" oncommand="openBookmarksIn(event,'window')"/>
+      <menuseparator/>
+      <menuitem id="lbladdhere" label="&lbl.addhere;" accesskey="&lbl.addhere.key;" oncommand="GM.addGMark(null,null,pops.getLabel(event));"/>
+      <menuitem id="lblrename" label="&lbl.rename;" accesskey="&lbl.rename.key;"         oncommand="renameLabel(null,null,null,event);"/>
+      <menuitem id="lbldel" label="&lbl.dellbl;" accesskey="&lbl.dellbl.key;"  oncommand="removeLabel(null,null,event);"/>
+      <menuitem id="lbldelbkmk" label="&lbl.delbkmk;" accesskey="&lbl.delbkmk.key;" oncommand="removeLabelAndBookmarks(null,null,event);"/>
+      <menuitem id="bkmkfav" label="&bkmk.changefavicon;" oncommand="GM.customFavicon(event);"/>
+      <menuitem id="bkmkrename" label="&bkmk.rename;" oncommand="var bm=pops.getBookmark(event); GMS.onRenameBookmark(bm,null,true);"/>
+      <menuitem id="bkmkupdate" label="&bkmk.updateURL;" oncommand="GM.updateURL(pops.getBookmark(event));"/>
+      <menuitem id="bkmkremovelbl" label="&bkmk.removelbl;" oncommand="removeLabelFromBookmark(document.popupNode);" disabled="false"/>
+      <menuitem id="bkmknewlbl" label="&bkmk.newlbl;" oncommand="GMS.addLabelToBookmark(pops.getBookmark(event),null,true);"/>
+      <menuitem id="bkmkdel" label="&bkmk.del;" oncommand="removeBookmarks(event)"/>
+      <menuseparator/>
+      <menuitem id="lblexpand" label="&lbl.expand;" oncommand="expand(event);"/>
+      <menuitem id="bkmkedit" label="&bkmk.edit;" oncommand="GM.onEditBookmark(pops.getBookmark(event));"/>
+    </popup>
+
+    <popup id="gm-general" style="border:1px gray solid;background:white;">
+      <menuitem label="&options.title;" style="margin-top: 1px;" oncommand="window.openDialog('chrome://gmarks/content/options.xul','','chrome,titlebar,toolbar,centerscreen,resizable');"/>
+      <menuitem label="&editfilters.label;"
+        oncommand='window.open("chrome://gmarks/content/editFilters.xul","&editfilters.label;","chrome,centerscreen,resizable");'/>
+      <menuitem label="&organize;" oncommand="window.open('chrome://gmarks/content/gmarksOrganize.xul','','chrome,resizable');"/>
+      <menuitem label="&refresh;" oncommand="GM.refresh();"/>
+      <menuseparator/>
+      <menuitem label="&signout;" oncommand="GM.signOut();"/>
+    </popup>
+    <tooltip id="gm-tree-tooltip" onpopupshowing="return gmTreeTooltipShowing(event);" orient="vertical">
+      <description id="gm-tooltip-title"/>
+      <description id="gm-tooltip-notes"/>
+    </tooltip>
+  </popupset>
+
+  <hbox align="center" id="gmarksSearchBoxContainer">
+    <label value="&search.label;" control="txtSearch" accesskey="&search.key;" />
+    <textbox id="txtSearch" flex="1"
+      type="timed" timeout="500"
+      oncommand="doSearch();"
+
+      />
+    <vbox popup="gm-general" onmouseup="event.stopPropagation();">
+      <image class="dropmarker"/>
+    </vbox>
+  </hbox>
+  <vbox id="submissionError" hidden="true">
+    <spacer style="height: 10px;"/>
+    <description>
+      &submissonError;
+    </description>
+    <description id="bookmarkTitleLabel">
+
+    </description>
+    <description  orient="vertical" id="bookmarkURLLabel">
+
+    </description>
+    <spacer style="height: 10px;"/>
+  </vbox>
+  <button id="addGMark" label="&addbkmk.label;" oncommand="GM.addGMark();"/>
+  <vbox id="signedOffContainer" hidden="true">
+    <spacer style="height: 20px;"/>
+    <description>
+      &notsignedon;
+    </description>
+    <spacer style="height: 10px;"/>
+    <grid>
+      <columns>
+        <column/>
+        <column flex="1"/>
+      </columns>
+      <rows>
+        <row>
+          <label value="&email;" control="txtEmail"/>
+          <textbox id="txtEmail" flex="1" onkeypress="GM.signinKey(event);"/>
+        </row>
+        <row>
+          <label value="&pass;" control="txtPass"/>
+          <textbox id="txtPassword" flex="1" type="password" onkeypress="GM.signinKey(event);"/>
+        </row>
+      </rows>
+    </grid>
+    <checkbox id="autosignin" value="false" label="&autosignin;"/>
+    <button label="&signin;" oncommand="doSignIn();"/>
+    <button label="&retry;" oncommand="GM.onRetryLoad();"/>
+  </vbox>
+  <stack flex="1" id="treeStack">
+    <!-- first drag code is for <=3.0
+         next batch is for >=3.1
+    -->
+    <tree id="gmarkList" flex="1" hidecolumnpicker="true" onkeypress="keyPress(event);"
+          
+          ondraggesture="gmarksDragObserver.onTreeDragGesture(event);"
+          ondragover="nsDragAndDrop.dragOver(event,gmarksDragObserver)"
+          ondragdrop="nsDragAndDrop.drop(event,gmarksDragObserver)"
+          ondragexit="nsDragAndDrop.dragExit(event,gmarksDragObserver)"
+          
+          seltype="single"
+          class="gmarksTree"
+          context="gm-contextPopup"
+          >
+        <treecols>
+            <treecol id="mainCol" label="&tree.colTitle;" primary="true" flex="1"
+              ondblclick="treeView.toggleAll(); event.stopPropagation();" onclick="event.stopPropagation();"/>
+        </treecols>
+        <treechildren class="" onclick="mouseClick(event);" tooltip="gm-tree-tooltip" onmousemove="gmMouseMoved(event);"/>
+    </tree>
+    <hbox id="loadingContainer" hidden="true" align="center" pack="center" flex="1">
+      <vbox align="center" pack="center" flex="1" style="width: 100%;">
+        <vbox id="loadBox">
+          <image id="loadImage"/>
+          <label value="&gmarks.loading;"/>
+        </vbox>
+      </vbox>
+    </hbox>
+  </stack>
+</page>

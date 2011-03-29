@@ -1,0 +1,154 @@
+<!ENTITY extension.title "GMarks">
+<!ENTITY gmarks.service "Google-Lesezeichen">
+<!ENTITY addbkmk.visibility "Sichtbarkeit:">
+<!ENTITY addbkmk.visibility.option1 "Privat">
+<!ENTITY addbkmk.visibility.option2 "Öffentlich">
+<!ENTITY submissonError "Beim Übermitteln des folgenden Bookmarks an Google ist ein Fehler aufgetreten:">
+<!ENTITY refresh "Aktualisieren">
+<!ENTITY bkmk.open "Öffnen">
+<!ENTITY bkmk.openTab "In neuem Tab öffnen">
+<!ENTITY bkmk.openWindow "In neuem Fenster öffnen">
+<!ENTITY bkmk.edit "Eigenschaften">
+<!ENTITY bkmk.changefavicon "Favicon ändern">
+<!ENTITY bkmk.rename "Umbenennen">
+<!ENTITY bkmk.updateURL "Update-Adresse:">
+<!ENTITY bkmk.removelbl "Schlagwort entfernen">
+<!ENTITY bkmk.newlbl "Neue Schlagwörter hinzufügen...">
+<!ENTITY bkmk.del "Löschen">
+<!ENTITY lbl.tabs "In Tab laden">
+<!ENTITY lbl.tabs.key "ö">
+<!ENTITY lbl.addhere "Lesezeichen hier hinzufügen">
+<!ENTITY lbl.addhere.key "h">
+<!ENTITY lbl.rename "Umbenennen">
+<!ENTITY lbl.rename.key "u">
+<!ENTITY lbl.dellbl "Schlagwort entfernen">
+<!ENTITY lbl.dellbl.key "e">
+<!ENTITY lbl.delbkmk "Lesezeichen entfernen">
+<!ENTITY lbl.delbkmk.key "e">
+<!ENTITY lbl.expand "Erweitern">
+<!ENTITY addbkmk.label "Lesezeichen hinzufügen">
+<!ENTITY search.label "Suchen:">
+<!ENTITY search.key "s">
+<!ENTITY notsignedon "Sie sind nicht bei Ihrem Google-Konto angemeldet.">
+<!ENTITY email "E-Mail:">
+<!ENTITY pass "Passwort:">
+<!ENTITY autosignin "Automatische Anmeldung">
+<!ENTITY autosignin.tooltip "Nur Einloggen, falls ich nicht schon angemeldet bin">
+<!ENTITY signin "Anmelden">
+<!ENTITY signout "Abmelden">
+<!ENTITY retry "Nochmals versuchen">
+<!ENTITY star.tooltip "Öffnet Gmarks in der Sidebar">
+<!ENTITY GMarks.add "Google-Lesezeichen hinzufügen">
+<!ENTITY GMarks.quickAdd "Google-Lesezeichen schnell hinzufügen">
+<!ENTITY GMarks.quickAdd.tooltip "Google-Lesezeichen hinzufügen (&quot;Lesezeichen hinzufügen&quot;-Dialog umgehen)">
+<!ENTITY tree.colTitle "Google-Lesezeichen">
+<!ENTITY sidebar.title "Gmarks">
+<!ENTITY pref.main.title "Haupteinstellungen">
+<!ENTITY options.title "Einstellungen">
+<!ENTITY options.sidebar "Sidebar">
+<!ENTITY options.toolbar "Symbolleiste">
+<!ENTITY options.menu "Menü">
+<!ENTITY options.misc "Verschiedenes">
+<!ENTITY bkmksmenu.hide "Lesezeichen-Menü verstecken">
+<!ENTITY gmarksmenu.enable "GMarks-Menü anzeigen">
+<!ENTITY gmarksmenu.rename "GMarks-Menü in Lesezeichen umbenennen">
+<!ENTITY menu.title "GMarks">
+<!ENTITY menu.accesskey "G">
+<!ENTITY menu.add "Hinzufügen">
+<!ENTITY menu.remove "Entfernen">
+<!ENTITY menu.reset "Zurücksetzen">
+<!ENTITY menu.up "Aufwärts">
+<!ENTITY menu.down "Abwärts">
+<!ENTITY import.label "Firefox-Lesezeichen importieren">
+<!ENTITY export.label "Google-Lesezeichen exportieren">
+<!ENTITY delete.label "Google-Lesezeichen löschen">
+<!ENTITY delete.tooltip "Hat GMarks etwas durcheinander gebracht? Lassen Sie mich es wissen.">
+<!ENTITY editfilters.label "Filter bearbeiten">
+<!ENTITY sort.label "Sortieren nach:">
+<!ENTITY sort.title "Name (alphabetisch)">
+<!ENTITY sort.date "Datum">
+<!ENTITY sort.visits "Anzahl Besuche">
+<!ENTITY sort.clicks "Lesezeichen-Klicks">
+<!ENTITY accountinfo.label "Konto-Einstellungen">
+<!ENTITY alwaysuse "Immer dieses Konto verwenden">
+<!ENTITY alwaysuse.tooltip "Benutze dieses Konto, auch wenn ich bei einem anderen Google-Konto angemeldet bin Dieses Konto immer verwenden, auch wenn Sie bereits in einem anderen Google-Konto angemeldet sind">
+<!ENTITY nosignin "Danke, ich melde mich selbst an.">
+<!ENTITY options.other "Weitere Einstellungen">
+<!ENTITY enableGMarksSuggest "GMarks-Vorschläge aktivieren">
+<!ENTITY showAddBookmark "Lesezeichen hinzufügen-Button anzeigen">
+<!ENTITY usectrld "Tastenkürzel &quot;Strg+D/Strg+Shift+D&quot; aktivieren">
+<!ENTITY showIcons "Symbole anzeigen">
+<!ENTITY showFavicons "Favicons anzeigen">
+<!ENTITY validateFavicons "Favicons überprüfen">
+<!ENTITY validateFavicons.tooltip "Überprüft, ob für ein Lesezeichen ein Favicon existiert. (Deaktivieren Sie diese Funktion, falls Sie viele Lesezeichen haben.)">
+<!ENTITY showCount "Anzahl Lesezeichen anzeigen">
+<!ENTITY httpsFavicons "Favicons via https zulassen">
+<!ENTITY showrecent "Die 10 zuletzt Besuchten anzeigen">
+<!ENTITY showfrequent "Die 10 Meistbesuchten anzeigen">
+<!ENTITY whatisthis "Was ist das?">
+<!ENTITY nestedChar "Trennzeichen für verschachtelte Schlagwörter">
+<!ENTITY disableQuickSearch "Schnellsuche deaktivieren">
+<!ENTITY qsTitle "Tastenkürzel für Schnellsuche">
+<!ENTITY qsDescription "Eine beliebige Taste drücken zum Ändern des Tastaturkürzels für die Schnellsuche">
+<!ENTITY HiddenLabels "Folgende Schlagwörter ausblenden">
+<!ENTITY unlabeledDescription "Standard-Schlagwort für Lesezeichen ohne Schlagwörter">
+<!ENTITY unlabeldDescrioption2 "Leer lassen, falls kein Standard-Schlagwort hinzugefügt werden soll">
+<!ENTITY GoogleReader.description "Standard-Schlagwort für markierte Artikel in Google-Reader.">
+<!ENTITY GoogleReader.show "Markierte Artikel in GMarks anzeigen.">
+<!ENTITY openinnewtab "Immer in neuem Tab öffnen">
+<!ENTITY toolbar.title "GMarks-Symbolleiste">
+<!ENTITY toolbar.hide "Symbolleiste verstecken">
+<!ENTITY toolbar.begining "Vor Lesezeichen-Symbolleiste anzeigen">
+<!ENTITY toolbar.end "Nach Lesezeichen-Symbolleiste anzeigen">
+<!ENTITY toolbar.label "Werkzeug-Leiste Label">
+<!ENTITY toolbar.desc "Leer lassen, um alle Lesezeichen anzuzeigen.">
+<!ENTITY toolbar.showIconsOnly "Nur Symbole anzeigen">
+<!ENTITY confirmBeforeDelete "Vor Löschen bestätigen">
+<!ENTITY bkmkLblCombos "Lesezeichen- und Schlagwort-Kombinationen ermöglichen">
+<!ENTITY bkmkLblCombos.details "Merges labels and bookmarks with the same names and parent labels, when clicking on the merged group, it opens the bookmarked site, when clicking on the twisty(+ or - sign), it opens the folder">
+<!ENTITY gmopts.tab.general "Allgemein">
+<!ENTITY gmopts.tab.display "Darstellung">
+<!ENTITY gmopts.tab.other "Weitere Optionen">
+<!ENTITY caption.more "Mehr">
+<!ENTITY filters.tabs.filtersList "Filter">
+<!ENTITY filters.tabs.createFilter "Filter erstellen">
+<!ENTITY filters.tabs.editFilter "Filter bearbeiten">
+<!ENTITY filterList.description "Die folgenden Filter werden allen neuen Lesezeichen hinzugefügt:">
+<!ENTITY filter.bkmk.results "Lesezeichen für diesen Filter">
+<!ENTITY createFilter.query "Anfrage">
+<!ENTITY createFilter.action "Aktion:">
+<!ENTITY field.name "Name:">
+<!ENTITY field.url "Adresse:">
+<!ENTITY field.labels "Schlagwörter:">
+<!ENTITY field.notes "Beschreibung:">
+<!ENTITY cQuery.all "Alle:">
+<!ENTITY cAction.description1 "Begin with ++ to add to the begining of the name or notes field.">
+<!ENTITY cAction.labels "Schlagwort hinzufügen:">
+<!ENTITY cAction.name "Name bearbeiten:">
+<!ENTITY cAction.url "Adresse bearbeiten:">
+<!ENTITY cAction.notes "Beschreibung hinzufügen:">
+<!ENTITY cAction.delete "Löschen (für bereits gesetzte Lesezeichen)">
+<!ENTITY convertToNested "Mehrere Schlagwörter in ein verschachteltes Schlagwort umwandeln">
+<!ENTITY cAction.createFilter.label "Filter erstellen">
+<!ENTITY cAction.cancel.label "Abbrechen">
+<!ENTITY cAction.applyAll.label "Auch auf folgende Lesezeichen anwenden:">
+<!ENTITY labels.howto "Schlagwörter mit Kommata voneinander trennen: News, Arbeit, Urlaub">
+<!ENTITY qSearch.info "Lesezeichen-Schnellsuche (zum Ausblenden, 2x Home drücken)">
+<!ENTITY addtoFFandGMarks "Beide">
+<!ENTITY organize "GMarks organisieren">
+<!ENTITY org.file "Datei">
+<!ENTITY org.file.accesskey "D">
+<!ENTITY org.file.import "Importieren">
+<!ENTITY org.file.export "Exportieren">
+<!ENTITY org.file.filters "Filter">
+<!ENTITY org.file.close "Schließen">
+<!ENTITY org.file.close.accesskey "s">
+<!ENTITY org.close.commandkey "w">
+<!ENTITY details.name "Name">
+<!ENTITY details.url "Adresse">
+<!ENTITY details.notes "Beschreibung">
+<!ENTITY details.labels "Schlagwörter">
+<!ENTITY details.dateAdded "Hinzugefügt">
+<!ENTITY details.visited "Besucht">
+<!ENTITY details.lastVisited "Zuletzt besucht">
+<!ENTITY gmarks.loading "Wird geladen...">

@@ -1,0 +1,15 @@
+/* mac */
+.gmarks-addgmarkbutton,
+.gmarks-personalbkmk .toolbarbutton-icon,
+.gmarks-personalbkmk .menu-iconic-left image,
+.gmarksTree treechildren::-moz-tree-image(showIcon) {
+  list-style-image: url("chrome://global/skin/tree/item.png");
+}
+.gmarks-personalfolder .toolbarbutton-icon,
+.gmarks-personalfolder .menu-iconic-left image,
+.gmarks-personalfolder-all .toolbarbutton-icon,
+.gmarks-personalfolder-all .menu-iconic-left image,
+.gmarksTree treechildren::-moz-tree-image(closed,showIcon),
+.gmarksTree treechildren::-moz-tree-image(open,showIcon){
+	list-style-image: url("chrome://global/skin/tree/folder.png");
+}

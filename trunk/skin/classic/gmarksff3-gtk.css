@@ -1,0 +1,15 @@
+/* linux gtk */
+.gmarks-addgmarkbutton,
+.gmarks-personalbkmk .toolbarbutton-icon,
+.gmarks-personalbkmk .menu-iconic-left image,
+.gmarksTree treechildren::-moz-tree-image(showIcon) {
+  list-style-image: url("moz-icon://stock/gtk-file?size=menu");
+}
+.gmarks-personalfolder .toolbarbutton-icon,
+.gmarks-personalfolder .menu-iconic-left image,
+.gmarks-personalfolder-all .toolbarbutton-icon,
+.gmarks-personalfolder-all .menu-iconic-left image,
+.gmarksTree treechildren::-moz-tree-image(closed,showIcon),
+.gmarksTree treechildren::-moz-tree-image(open,showIcon){
+	list-style-image: url("moz-icon://stock/gtk-directory?size=menu");
+}

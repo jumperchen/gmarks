@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://gmarks/skin/style.css" type="text/css"?>
+<!DOCTYPE window SYSTEM "chrome://gmarks/locale/gmarks.dtd">
+
+<dialog id="editFilters" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" onload="doLoad();" width="600" height="520" title="&editfilters.label;"
+	buttons="accept,cancel"
+        ondialogaccept="return doOK();"
+        ondialogcancel="return doCancel();"
+        persist="width height screenX screenY"
+        >
+
+	<stringbundleset id="stringbundleset">
+	   <stringbundle id="gmarksBundle" src="chrome://gmarks/locale/gmarks.properties"/>
+	</stringbundleset>
+
+	<script type="application/x-javascript" src="chrome://gmarks/content/editFilters.js" />
+	<script type="application/x-javascript" src="chrome://gmarks/content/filters.js" />
+
+	<tooltip id="listTooltip" orient="vertical" style="background-color: #33DD00;" onpopupshowing="initTooltip(event);">
+	  <label value="Title: "/>
+	  <label value="URL: "/>
+	  <label value="Labels: "/>
+	  <label value="Notes: "/>
+	</tooltip>
+	<tabbox id="tablist">
+	  <tabs id="mainTabsList" onselect="refreshSearchList();">
+	    <tab label="&filters.tabs.filtersList;" id="displayFiltersTab"/>
+	    <tab label="&filters.tabs.createFilter;" id="createEditTab"/>
+	  </tabs>
+	  <tabpanels>
+	    <tabpanel id="filtersTab" orient="vertical" class="filtersTab">
+	    	<label value="&filterList.description;"/>
+			<grid flex="1" id="filtersTabGrid">
+				<columns>
+					<column flex="5"/>
+					<column/>
+				</columns>
+				<rows id="filtersTabRows">
+
+				</rows>
+			</grid>
+	    </tabpanel>
+	    <tabpanel id="createFilterTab" orient="vertical" >
+	    	<tabbox id="createAFilterTabs" flex="1">
+				<tabs>
+					<tab label="&createFilter.query;"/>
+				    <tab label="&createFilter.action;"/>
+				</tabs>
+				<tabpanels>
+					<tabpanel id="c-filter-query">
+				    	<grid flex="1">
+					 		<columns>
+					    		<column/>
+					   			<column flex="1"/>
+					  		</columns>
+					  		<rows>
+								<row>
+									<label control="nameBox" value="&field.name;"/>
+					 				<textbox id="nameBox" flex="1" type="timed" timeout="1000" oncommand="refreshSearchList();"/>
+								</row>
+								<row>
+					  				<label control="urlBox" value="&field.url;"/>
+					 				<textbox id="urlBox" flex="1" type="timed" timeout="1000" oncommand="refreshSearchList();"/>
+								</row>
+								<row>
+					  				<label control="labelsBox" value="&field.labels;"/>
+					 				<textbox id="labelsBox" flex="1" type="timed" timeout="1000" oncommand="refreshSearchList();"/>
+								</row>
+								<row>
+					  				<label control="notesBox" value="&field.notes;"/>
+					 				<textbox id="notesBox" flex="1" multiline="true" type="timed" timeout="1000" oncommand="refreshSearchList();"/>
+								</row>
+								<row>
+									<label control="anyBox" value="&cQuery.all;"/>
+					 				<textbox id="anyBox" flex="1" type="timed" timeout="1000" oncommand="refreshSearchList();"/>
+								</row>
+					  		</rows>
+						</grid>
+					</tabpanel>
+					<tabpanel id="c-filter-action">
+						<vbox flex="1">
+							<label value="&cAction.description1;" flex="1"/>
+							<!--<label value="&cAction.description2;" flex="1"/>-->
+					    	<grid flex="1">
+						 		<columns>
+						    		<column/>
+						   			<column flex="1"/>
+						  		</columns>
+
+						  		<rows>
+									<row>
+										<label control="cFilterAddLabelsBox" value="&cAction.labels;"/>
+						 				<textbox id="cFilterAddLabelsBox" flex="1"/>
+									</row>
+									<row>
+						  				<label control="cFilterNameBox" value="&cAction.name;"/>
+						 				<textbox id="cFilterNameBox" flex="1"/>
+									</row>
+									<row>
+						  				<label control="cFilterNotesBox" value="&cAction.notes;"/>
+						 				<textbox id="cFilterNotesBox" flex="1" multiline="true"/>
+									</row>
+									<hbox>
+										<checkbox id="cFilterDelete" label="&cAction.delete;" checked="false"/>
+										<checkbox id="cFilterToNested" label="&convertToNested;" checked="false"/>
+									</hbox>
+						  		</rows>
+							</grid>
+						</vbox>
+					</tabpanel>
+				</tabpanels>
+			</tabbox>
+			<hbox>
+				<button label="&cAction.createFilter.label;" id="createEditFilterButton" oncommand="doCreateEditFilter();"/>
+				<button label="&cAction.cancel.label;" oncommand="resetCreateEditFilter();"/>
+				<checkbox id="applyToBkmks" label="&cAction.applyAll.label;" checked="false"/>
+				<progressmeter id="filterProgress" mode="determined" hidden="true"/>
+			</hbox>
+			<groupbox id="sampleResults">
+				<caption label="&filter.bkmk.results;"/>
+				<listbox id="resultList">
+			      <listitem label="Ruby"/>
+			    </listbox>
+			</groupbox>
+	    </tabpanel>
+	  </tabpanels>
+	</tabbox>
+</dialog>

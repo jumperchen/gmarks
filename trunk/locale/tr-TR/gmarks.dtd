@@ -1,0 +1,154 @@
+<!ENTITY extension.title "GMarks">
+<!ENTITY gmarks.service "Google Bookmarks">
+<!ENTITY addbkmk.visibility "Görünürlük:">
+<!ENTITY addbkmk.visibility.option1 "Özel">
+<!ENTITY addbkmk.visibility.option2 "Genel">
+<!ENTITY submissonError "Aşağıdaki yer imleri Google&apos;a gönderilirken hata oluştu:">
+<!ENTITY refresh "Yenile">
+<!ENTITY bkmk.open "Aç">
+<!ENTITY bkmk.openTab "Yeni Sekmede Aç">
+<!ENTITY bkmk.openWindow "Yeni Pencerede Aç">
+<!ENTITY bkmk.edit "Özellikler">
+<!ENTITY bkmk.changefavicon "Favicon Değiştir">
+<!ENTITY bkmk.rename "Ad Değiştir">
+<!ENTITY bkmk.updateURL "Bağlantıyı Güncelle">
+<!ENTITY bkmk.removelbl "Etiketi Kaldır">
+<!ENTITY bkmk.newlbl "Yeni Etiket Ekle..">
+<!ENTITY bkmk.del "Sil">
+<!ENTITY lbl.tabs "Sekmede Aç">
+<!ENTITY lbl.tabs.key "o">
+<!ENTITY lbl.addhere "Buraya Yer İmi Ekle">
+<!ENTITY lbl.addhere.key "a">
+<!ENTITY lbl.rename "Ad Değiştir">
+<!ENTITY lbl.rename.key "r">
+<!ENTITY lbl.dellbl "Etiket Sil">
+<!ENTITY lbl.dellbl.key "d">
+<!ENTITY lbl.delbkmk "Yer İmi Sil">
+<!ENTITY lbl.delbkmk.key "b">
+<!ENTITY lbl.expand "Genişlet">
+<!ENTITY addbkmk.label "Yer İmi Ekle">
+<!ENTITY search.label "Ara:">
+<!ENTITY search.key "s">
+<!ENTITY notsignedon "Google Hesabınızda giriş yapmamışsınız">
+<!ENTITY email "Eposta:">
+<!ENTITY pass "Şifre:">
+<!ENTITY autosignin "Otomatik giriş yap">
+<!ENTITY autosignin.tooltip "Sadece giriş yapılmamışsa oturum aç">
+<!ENTITY signin "Oturum Aç">
+<!ENTITY signout "Oturumu Kapat">
+<!ENTITY retry "Yeniden Dene">
+<!ENTITY star.tooltip "Kenar Çubuğunda GMarks&apos;ı Aç">
+<!ENTITY GMarks.add "GMark Ekle">
+<!ENTITY GMarks.quickAdd "Hızlı GMark Ekle">
+<!ENTITY GMarks.quickAdd.tooltip "GMark Ekle (Yerimi penceresini esgeç)">
+<!ENTITY tree.colTitle "Google Bookmarks">
+<!ENTITY sidebar.title "GMarks">
+<!ENTITY pref.main.title "Genel">
+<!ENTITY options.title "Seçenekler">
+<!ENTITY options.sidebar "Kenar Çubuğu">
+<!ENTITY options.toolbar "Araç Çubuğu">
+<!ENTITY options.menu "Menü">
+<!ENTITY options.misc "Çeşitli">
+<!ENTITY bkmksmenu.hide "Yerimleri Menüsünü Gizle">
+<!ENTITY gmarksmenu.enable "GMarks Menüsünü etkinleştir">
+<!ENTITY gmarksmenu.rename "GMarks Yer İmleri menüsünün adını değiştir">
+<!ENTITY menu.title "GMarks">
+<!ENTITY menu.accesskey "G">
+<!ENTITY menu.add "Ekle">
+<!ENTITY menu.remove "Kaldır">
+<!ENTITY menu.reset "Sıfırla">
+<!ENTITY menu.up "Yukarı">
+<!ENTITY menu.down "Aşağı">
+<!ENTITY import.label "Firefox Yerimlerini İçe Aktar">
+<!ENTITY export.label "Google Bookmarks&apos;ı Dışa Aktar">
+<!ENTITY delete.label "Google Bookmarks Sil">
+<!ENTITY delete.tooltip "GMarks ile sorununuz mu var? Lütfen iletişime geçin.">
+<!ENTITY editfilters.label "Filtreleri Düzenle">
+<!ENTITY sort.label "Sırala:">
+<!ENTITY sort.title "Başlık (Alfabetik)">
+<!ENTITY sort.date "Tarih">
+<!ENTITY sort.visits "Ziyaret (Firefox Geçmişi)">
+<!ENTITY sort.clicks "Yerimi Tıklamaları">
+<!ENTITY accountinfo.label "Hesap Özellikleri">
+<!ENTITY alwaysuse "Her zaman bu hesabı kullan">
+<!ENTITY alwaysuse.tooltip "Başka bir hesaba giriş yapmış olsanız bile, belirtilen hesaba erişim sağlar.">
+<!ENTITY nosignin "Ben kendim giriş yaparım, sen zahmet etme.">
+<!ENTITY options.other "Diğer Seçenekler">
+<!ENTITY enableGMarksSuggest "GMarks Gönderimi Etkin">
+<!ENTITY showAddBookmark "Yer imi ekle düğmesini göster">
+<!ENTITY usectrld "Ctrl+D/Ctrl+Shift+D Desteği Etkin">
+<!ENTITY showIcons "Simgeleri Göster">
+<!ENTITY showFavicons "Favori Simgelerini Göster">
+<!ENTITY validateFavicons "Favori Simgelerini Doğrula">
+<!ENTITY validateFavicons.tooltip "Yer imi simgesinin var olup olmadığını kontrol eder, çok fazla yer iminiz varsa devre dışı bırakır.">
+<!ENTITY showCount "Yerimi Toplamını Göster">
+<!ENTITY httpsFavicons "https Favori Simgeleri Etkin">
+<!ENTITY showrecent "Son 10 tanesini göster">
+<!ENTITY showfrequent "Sık kullanılan 10 yer imi">
+<!ENTITY whatisthis "Bu nedir?">
+<!ENTITY nestedChar "İç İçe Geçmiş Etiket Ayıracı:">
+<!ENTITY disableQuickSearch "Hızlı Arama Devredışı">
+<!ENTITY qsTitle "Hızlı Arama kısayoluı">
+<!ENTITY qsDescription "Hızlı arama kısayolunu değiştirmek için metin kutusunda bir tuşa basın">
+<!ENTITY HiddenLabels "Gizlenecek etiketleri aşağıda belirtin.">
+<!ENTITY unlabeledDescription "Etiketsizler ve buradakiler için varsayılan etiket">
+<!ENTITY unlabeldDescrioption2 "Ek etiket yoksa boş bırakın">
+<!ENTITY GoogleReader.description "Okunan yıldızlı nesneler için varsayılan etiket">
+<!ENTITY GoogleReader.show "GMarks&apos;ta yıldızlı nesneleri göster">
+<!ENTITY openinnewtab "Her zaman yeni sekmede aç">
+<!ENTITY toolbar.title "GMarks Araç Çubuğu">
+<!ENTITY toolbar.hide "Araç çubuğunu gösterme">
+<!ENTITY toolbar.begining "FF Yer İmleri Araç Çubuğundan önce göster">
+<!ENTITY toolbar.end "FF Yer İmleri Araç Çubuğundan sonra göster">
+<!ENTITY toolbar.label "Araç Çubuğu Etiketi:">
+<!ENTITY toolbar.desc "Tüm yer imlerini görüntülemek için boş bırakın.">
+<!ENTITY toolbar.showIconsOnly "Sadece simgeleri göster">
+<!ENTITY confirmBeforeDelete "Silmeden Önce Onayla">
+<!ENTITY bkmkLblCombos "Yer İmi+Etiket Karışımını Etkinleştir">
+<!ENTITY bkmkLblCombos.details "Etiket ve yer imlerini aynı isimler ve üst etiketlerle birleştirir. Birleştirilmiş gruba tıklanınca yer imine alınmış siteyi açar. Twisty&apos;e (+ ya da - işareti) tıklayınca klasörü açar.">
+<!ENTITY gmopts.tab.general "Genel">
+<!ENTITY gmopts.tab.display "Görünüm">
+<!ENTITY gmopts.tab.other "Diğer">
+<!ENTITY caption.more "Daha">
+<!ENTITY filters.tabs.filtersList "Filtreler">
+<!ENTITY filters.tabs.createFilter "Filtre Oluştur">
+<!ENTITY filters.tabs.editFilter "Filtre Düzenle">
+<!ENTITY filterList.description "Aşağıdaki filtreler, tüm yeni yer imlerine uygulanacak:">
+<!ENTITY filter.bkmk.results "Bu filtre için yer imi sonuçları:">
+<!ENTITY createFilter.query "Sorgu">
+<!ENTITY createFilter.action "İşlem">
+<!ENTITY field.name "İsim">
+<!ENTITY field.url "Bağlantı:">
+<!ENTITY field.labels "Etiketler:">
+<!ENTITY field.notes "Notlar:">
+<!ENTITY cQuery.all "Tümü:">
+<!ENTITY cAction.description1 "Ekleme yaparken isim veya not değerlerinin başlangıcında ++ ile başlayın.">
+<!ENTITY cAction.labels "Etiket Ekle:">
+<!ENTITY cAction.name "İsim Düzenle:">
+<!ENTITY cAction.url "Bağlantı Düzenle:">
+<!ENTITY cAction.notes "Not Ekle:">
+<!ENTITY cAction.delete "Sil [yer imlerine eklenenler için]">
+<!ENTITY convertToNested "Bir iç içe geçmiş etikette birden fazla etiketi etkinleştir">
+<!ENTITY cAction.createFilter.label "Filtre Oluştur">
+<!ENTITY cAction.cancel.label "Vazgeç">
+<!ENTITY cAction.applyAll.label "Ayrıca aşağıdaki yer imlerine uygula:">
+<!ENTITY labels.howto "Etiketleri virgül ile ayır: Haberler, Yapılacak Listesi, Yaz Tatili">
+<!ENTITY qSearch.info "Hızlı Yer İmi Arama [Gizlemek için iki defa Home tuşuna basın]">
+<!ENTITY addtoFFandGMarks "Her İkisi">
+<!ENTITY organize "GMarks&apos;ı Organize Et">
+<!ENTITY org.file "Dosya">
+<!ENTITY org.file.accesskey "f">
+<!ENTITY org.file.import "İçe Aktar">
+<!ENTITY org.file.export "Dışa Aktar">
+<!ENTITY org.file.filters "Filtreler">
+<!ENTITY org.file.close "Kapat">
+<!ENTITY org.file.close.accesskey "c">
+<!ENTITY org.close.commandkey "w">
+<!ENTITY details.name "Ad">
+<!ENTITY details.url "Konum">
+<!ENTITY details.notes "Notlar">
+<!ENTITY details.labels "Etiketler">
+<!ENTITY details.dateAdded "Eklenme Tarihi">
+<!ENTITY details.visited "Ziyaret">
+<!ENTITY details.lastVisited "Son Ziyaret">
+<!ENTITY gmarks.loading "Yükleniyor..">

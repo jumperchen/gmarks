@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://browser/skin/browser.css" type="text/css"?>
+<?xml-stylesheet href="chrome://gmarks/skin/style.css" type="text/css"?>
+<!--chrome://browser/skin/browser.css-->
+
+<!DOCTYPE window SYSTEM "chrome://gmarks/locale/gmarks.dtd">
+
+<window onload="doOrganizeLoad();" onunload="doOrganizeUnload();"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        width="630" height="400"
+        persist="width height screenX screenY"
+        windowtype="gmarks_organize"
+        id="gmarks_organize"
+        resizable="true"
+        title="&organize;"
+        >
+
+  <script type="application/x-javascript" src="chrome://browser/content/utilityOverlay.js"/>
+  <script type="application/x-javascript" src="chrome://gmarks/content/control.js"/>
+  <script type="application/x-javascript" src="chrome://gmarks/content/sidebar.js"/>
+  <script type="application/x-javascript" src="chrome://gmarks/content/treeBuilder.js"/>
+  <script type="application/x-javascript" src="chrome://gmarks/content/bookmarkBatch.js"/>
+  <script type="application/x-javascript" src="chrome://global/content/nsTransferable.js"/>
+  <script type="application/x-javascript" src="chrome://global/content/nsDragAndDrop.js"/>
+  <script type="application/x-javascript" src="chrome://gmarks/content/dragndrop.js"/>
+  <script type="application/x-javascript" src="chrome://global/content/globalOverlay.js"/>
+
+  <stringbundleset id="stringbundleset">
+     <stringbundle id="gmarksBundle" src="chrome://gmarks/locale/gmarks.properties"/>
+  </stringbundleset>
+
+  <commandset>
+      <command id="cmd_close" oncommand="closeWindow(true);"/>
+      <command id="cmd_undo" oncommand="GMS.undoLastAction();"/>
+    </commandset>
+  <keyset id="gmarksManagerKeys">
+      <key id="key_close" key="&org.close.commandkey;" modifiers="accel" command="cmd_close"/>
+      <key keycode="VK_ESCAPE" command="cmd_close"/>
+      <key id="key_undo" key="z"   modifiers="accel"  command="cmd_undo"/>
+  </keyset>
+  <popupset id="gmarksPopupset">
+    <popup id="gm-contextPopup" onpopupshowing="return gmTreeContextShowing(event);">
+      <menuitem id="lbltabs" label="&lbl.tabs;" accesskey="&lbl.tabs.key;" oncommand="openInTabs(event);"/>
+      <menuitem id="bkmkopen" label="&bkmk.open;" oncommand="openBookmarks(event)"/>
+      <menuitem id="bkmktab" label="&bkmk.openTab;" oncommand="openInTabs(event)"/>
+      <menuitem id="bkmkwindow" label="&bkmk.openWindow;" oncommand="openBookmarksIn(event,'window');"/>
+      <menuseparator/>
+      <menuitem id="lbladdhere" label="&lbl.addhere;" accesskey="&lbl.addhere.key;" oncommand="GM.addGMark(null,null,pops.getLabel(event));"/>
+      <menuitem id="lblrename" label="&lbl.rename;" accesskey="&lbl.rename.key;"         oncommand="renameLabel(null,null,null,event);"/>
+      <menuitem id="lbldel" label="&lbl.dellbl;" accesskey="&lbl.dellbl.key;"  oncommand="removeLabel(null,null,event);"/>
+      <menuitem id="lbldelbkmk" label="&lbl.delbkmk;" accesskey="&lbl.delbkmk.key;" oncommand="removeLabelAndBookmarks(null,null,event);"/>
+      <menuitem id="bkmkfav" label="Change Favicon" oncommand="GM.customFavicon(event);"/>
+      <menuitem id="bkmkrename" label="&bkmk.rename;" oncommand="var bm=pops.getBookmark(event); GMS.onRenameBookmark(bm,null,true);"/>
+      <menuitem id="bkmkupdate" label="&bkmk.updateURL;" oncommand="GM.updateURL(pops.getBookmark(event));"/>
+      <menuitem id="bkmkremovelbl" label="&bkmk.removelbl;" oncommand="removeLabelFromBookmark(document.popupNode);" disabled="false"/>
+      <menuitem id="bkmknewlbl" label="&bkmk.newlbl;" oncommand="GMS.addLabelToBookmark(pops.getBookmark(event),null,true);"/>
+      <menuitem id="bkmkdel" label="&bkmk.del;" oncommand="removeBookmarks(event)"/>
+      <menuseparator/>
+      <menuitem id="lblexpand" label="&lbl.expand;" oncommand="expand(event);"/>
+      <menuitem id="bkmkedit" label="&bkmk.edit;" oncommand="GM.onEditBookmark(pops.getBookmark(event));"/>
+    </popup>
+
+    <popup id="gm-labelPopup">
+        <menuitem label="&lbl.tabs;" accesskey="&lbl.tabs.key;" oncommand="openInTabs();"/>
+        <menuseparator/>
+        <menuitem label="&lbl.addhere;" accesskey="&lbl.addhere.key;" oncommand="GM.addGMark(null,null,pops.getLabel());" id="addHere"/>
+        <menuseparator/>
+        <menuitem label="&lbl.rename;" accesskey="&lbl.rename.key;"         oncommand="renameLabel(null,null,null,event);" id="renameLbl"/>
+        <menuitem label="&lbl.dellbl;" accesskey="&lbl.dellbl.key;"  oncommand="removeLabel(null,null,event);" id="delLabel"/>
+        <menuitem label="&lbl.delbkmk;" accesskey="&lbl.delbkmk.key;" oncommand="removeLabelAndBookmarks(null,null,event);" id="delBkmks"/>
+        <menuseparator/>
+        <menuitem label="&lbl.expand;" oncommand="expand(event);"/>
+    </popup>
+
+    <popup id="gm-general">
+      <menuitem label="&options.title;"  oncommand="window.openDialog('chrome://gmarks/content/options.xul');"/>
+      <menuitem label="&editfilters.label;"
+        oncommand='window.openDialog("chrome://gmarks/content/editFilters.xul","&editfilters.label;","chrome,centerscreen,modal");'/>
+      <menuitem label="&refresh;" oncommand="GM.refresh();"/>
+    </popup>
+  </popupset>
+  <toolbox id="bookmarks-toolbox">
+      <menubar id="main-menubar">
+        <menu label="&org.file;" accesskey="&org.file.accesskey;" id="gmarks-file-menu">
+          <menupopup id="gmarks-file-menupopup">
+            <menuitem id="gmarks-menuitem-import" label="&org.file.import;" oncommand="importFromFirefox();"/>
+            <menuitem label="&org.file.export;" oncommand="exportFromGoogle();"/>
+            <menuitem label="&delete.label;" oncommand="deleteFromGoogle();"/>
+            <menuitem label="&org.file.filters;" oncommand="editFilters()"/>
+            <menuitem label="&refresh;" oncommand="GM.refresh();"/>
+            <menuseparator/>
+            <menuitem label="&org.file.close;" command="cmd_close"
+                      key="key_close" accesskey="&org.file.close.accesskey;"/>
+          </menupopup>
+        </menu>
+      </menubar>
+      <toolbar id="bookmarks-search" align="center" pack="center">
+        <label value="&search.label;" control="txtSearch" accesskey="&search.key;" />
+      <textbox id="txtSearch" flex="1"
+        type="timed" timeout="500"
+        oncommand="doSearch();"
+        />
+      </toolbar>
+  </toolbox>
+  <hbox id="contentHbox" flex="1">
+    <tree id="gmarkLabels"  hidecolumnpicker="true" onkeypress="keyPress(event);"
+          ondraggesture="gmarksDragObserver.onTreeDragGesture(event);"
+          ondragover="nsDragAndDrop.dragOver(event,gmarksDragObserver)"
+          ondragdrop="nsDragAndDrop.drop(event,gmarksDragObserver)"
+          ondragexit="nsDragAndDrop.dragExit(event,gmarksDragObserver)"
+          minWidth="150"
+          persist="width"
+          style="min-width: 150px;"
+          class="gmarksTree"
+          context="gm-contextPopup"
+          >
+        <treecols>
+            <treecol id="mainCol" label="&tree.colTitle;" primary="true" flex="1"
+              ondblclick="treeView.toggleAll(); event.stopPropagation();" onclick="event.stopPropagation();"/>
+        </treecols>
+        <treechildren class="" onmouseup="mouseClick(event);" />
+    </tree>
+    <splitter id="bookmark-views-splitter" collapse="none" persist="state" /><!--persist="state"-->
+    <deck id="gmarks-view-deck" flex="5">
+      <vbox id="gmarks-default-view" flex="1">
+        <stack id="gmarks-details-tree" flex="1">
+          <tree id="gmarkDetails" flex="1" hidecolumnpicker="false" onkeypress="keyPress(event);"
+            ondraggesture="gmarksDragObserver.onTreeDragGesture(event);"
+            ondragover="nsDragAndDrop.dragOver(event,gmarksDragObserver)"
+                ondragdrop="nsDragAndDrop.drop(event,gmarksDragObserver)"
+                ondragexit="nsDragAndDrop.dragExit(event,gmarksDragObserver)"
+                enableColumnDrag="true"
+                editable="true"
+                persist="width"
+                class="gmarksTree"
+                context="gm-contextPopup"
+                >
+              <treecols>
+                <treecol id="nameCol" label="&details.name;" primary="true" flex="5"
+                  onclick="event.stopPropagation();"
+                  ondblclick="treeView.sortBy('name');"
+                  hidden="false" persist="width hidden"
+                  fixed="false"
+                  editable="true"/>
+                <splitter collapse="before" class="tree-splitter"/>
+                <treecol id="urlCol" label="&details.url;" flex="4"
+                  onclick="event.stopPropagation();"
+                  ondblclick="treeView.sortBy('url');"
+                  hidden="false" persist="width hidden"
+                  fixed="false"
+                  editable="true"/>
+                <splitter collapse="before" class="tree-splitter"/>
+                <treecol id="notesCol" label="&details.notes;" flex="2"
+                  ondblclick="treeView.sortBy('notes');"
+                  hidden="false" persist="width hidden"
+                  fixed="false"
+                  editable="true"/>
+                <splitter collapse="before" class="tree-splitter"/>
+                <treecol id="labelsCol" label="&details.labels;" flex="3"
+                  ondblclick="event.stopPropagation();"
+                  hidden="false" persist="width hidden"
+                  fixed="false"
+                  editable="true"/>
+                <splitter collapse="before" class="tree-splitter"/>
+                <treecol id="dateCol" label="&details.dateAdded;" flex="1"
+                  ondblclick="treeView.sortBy('date');"
+                  hidden="true" persist="width hidden"
+                  fixed="false"
+                  editable="true"/>
+                <splitter collapse="before" persist="state" class="tree-splitter"/>
+                <treecol id="visitedCol" label="&details.visited;" flex="1"
+                  ondblclick="event.stopPropagation();"
+                  hidden="true" persist="width hidden"
+                  fixed="false"
+                  editable="true"/>
+                <splitter collapse="before" class="tree-splitter"/>
+
+              </treecols>
+              <treechildren class="" onmouseup="mouseClick(event);"
+                ondblclick="doubleClick(event)"/>
+          </tree>
+          <textbox id="editableTxt" value="" hidden="true"/>
+        </stack>
+      </vbox>
+    </deck>
+   </hbox>
+  <statusbar id="organize-statusbar" hidden="true" orient="horizontal">
+    <statusbarpanel orient="horizontal" align="left" flex="1">
+      <label id="status-label" value="status label"/>
+      <hbox>
+         <stack>
+           <progressmeter id="status-progress" mode="determined" value="0%" flex="1" orient="horizontal"/>
+           <hbox align="center" pack="center">
+             <label id="progress-label" value="0 / 0 (0%)" flex="1" orient="horizontal"/>
+           </hbox>
+         </stack>
+      </hbox>
+    </statusbarpanel>
+  </statusbar>
+</window>

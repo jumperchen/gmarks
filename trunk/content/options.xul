@@ -1,0 +1,199 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<!DOCTYPE window SYSTEM "chrome://gmarks/locale/gmarks.dtd">
+
+<prefwindow id="gmarksOptions" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	title="&options.title;"
+	onload="initWindow(event);"
+	ondialogaccept="return onAccept(event);;"
+	ondialogcancel="return doCancel(event);"
+	persist="width height screenX screenY"
+	type="prefwindow"
+	>
+
+	<prefpane id="pGeneral" label="&gmopts.tab.general;" orient="vertical"
+			image="chrome://gmarks/skin/general.png">
+		<preferences>
+			<preference id="prefSortBy" name="gmarkssortby" type="string"/>
+			<preference id="prefSignin" name="gmarks.signin" type="bool"/>
+			<preference id="prefNestedChar" name="gmarks.nestedChar" type="string"/>
+			<preference id="prefHidden" name="gmarks.hiddenLabels" type="string"/>
+			<preference id="prefUnlabeled" name="gmarks.unlabeled" type="string"/>
+		</preferences>
+		<groupbox flex="1">
+			<caption label="&sort.label;"/>
+			<radiogroup id="sortby" preference="prefSortBy">
+				<radio id="title" label="&sort.title;" value="title"/>
+				<radio id="date"  label="&sort.date;" value="date"/>
+				<radio id="visits"  label="&sort.visits;" value="freq"/>
+			</radiogroup>
+		</groupbox>
+		<hbox>
+			<groupbox>
+				<caption label="&accountinfo.label;"/>
+				<grid>
+					<columns>
+						<column/>
+						<column flex="1"/>
+					</columns>
+					<rows>
+						<row>
+							<label value="&email;" control="txtEmail"/>
+							<textbox id="txtEmail" flex="1" onchange="saveLogin(event)"/>
+						</row>
+						<row>
+							<label value="&pass;" control="txtPass"/>
+							<textbox id="txtPassword" flex="1" type="password" onchange="saveLogin(event)"/>
+						</row>
+					</rows>
+				</grid>
+				<checkbox id="auto" label="&autosignin;" tooltiptext="&autosignin.tooltip;" preference="prefSignin"/>
+			</groupbox>
+			<groupbox>
+				<hbox align="center">
+					<label value="&nestedChar;" control="txtNestedChar"/>
+					<textbox id="txtNestedChar" preference="prefNestedChar" style="width: 20px;"/>
+				</hbox>
+				<caption label="&field.labels;"/>
+				<label value="&HiddenLabels;"/>
+				<textbox preference="prefHidden"/>
+				<label value="&unlabeledDescription;"/>
+				<textbox preference="prefUnlabeled"/>
+			</groupbox>
+		</hbox>
+	</prefpane>
+	<prefpane id="pDisplay" label="&gmopts.tab.display;"
+			image="chrome://gmarks/skin/display.png">
+		<preferences>
+			<!--sidebar prefs-->
+			<preference id="prefShowRecent" name="gmarks.showRecent" type="bool"/>
+			<preference id="prefShowFreq" name="gmarks.showFreq" type="bool"/>
+			<preference id="prefCount" name="gmarks.showCount" type="bool"/>
+			<preference id="prefAB" name="gmarks.showAddBookmark" type="bool"/>
+			<!-- toolbar prefs -->
+			<preference id="prefToolbarFolder" name="gmarks.toolbarFolder" type="unichar"/>
+			<preference id="prefToolbarIcons" name="gmarks.toolbarShowIconsOnly" type="bool"/>
+			<!-- menu prefs -->
+			<preference id="prefHideBookmarks" name="gmarks.menu.hidebookmarks" type="bool"/>
+			<preference id="prefMenu" name="gmarks.menu.hidden" type="bool" inverted="true"/>
+			<preference id="prefRenameMenu" name="gmarks.menu.rename" type="bool"/>
+			<preference id="prefMenuItems" name="gmarks.menu.items" type="string"/>
+			<!-- misc display prefs -->
+			<preference id="prefIcons" name="gmarks.showIcons" type="bool"/>
+			<preference id="prefFavicons" name="gmarks.showFav" type="bool"/>
+			<preference id="prefValidateFavicons" name="gmarks.icons.validate" type="bool"/>
+		</preferences>
+		<tabbox flex="1" style="margin: 0 0 0 0 !important; padding: 0 0 0 0 !important;">
+			<tabs>
+				<tab id="display_sidebar" label="&options.sidebar;"/>
+				<tab id="display_toolbar" label="&options.toolbar;"/>
+				<tab id="display_menu" label="&options.menu;"/>
+				<tab id="display_misc" label="&options.misc;"/>
+			</tabs>
+			<tabpanels>
+				<tabpanel id="sidebar_panel" orient="vertical">
+					<checkbox label="&showrecent;" checked="true" preference="prefShowRecent"/>
+					<checkbox label="&showfrequent;" checked="true" preference="prefShowFreq"/>
+					<checkbox label="&showCount;" preference="prefCount"/>
+					<checkbox label="&showAddBookmark;" checked="true" preference="prefAB"/>
+				</tabpanel>
+				<tabpanel id="toolbar_panel" orient="vertical">
+					<label value="&toolbar.label;"/>
+					<textbox preference="prefToolbarFolder"/>
+					<description>
+						&toolbar.desc;
+					</description>
+					<separator class="grooved-thin"/>
+					<checkbox preference="prefToolbarIcons" label="&toolbar.showIconsOnly;"/>
+				</tabpanel>
+				<tabpanel id="menu_panel" orient="vertical">
+					<checkbox label="&bkmksmenu.hide;" checked="false" preference="prefHideBookmarks"/>
+					<hbox>
+						<checkbox label="&gmarksmenu.enable;" checked="false" preference="prefMenu"/>
+						<checkbox label="&gmarksmenu.rename;" checked="false" preference="prefRenameMenu"/>
+					</hbox>
+					<hbox align="center" pack="center">
+						<listbox id="gmarks_menu_items" preference="prefMenuItems"
+								 onsynctopreference="return getMenuListBoxValue(event)"/>
+						<vbox>
+							<spacer flex="1"/>
+							<button label="&menu.add;" oncommand="addItemToMenu(event)"/>
+							<button label="&menu.remove;" oncommand="removeItemFromMenu(event)"/>
+							<button label="&menu.reset;" oncommand="resetMenuDefaults(event)"/>
+							<button label="&menu.up;" oncommand="moveUpInMenuList(event)"/>
+							<button label="&menu.down;" oncommand="moveDownInMenuList(event)"/>
+							<spacer flex="1"/>
+						</vbox>
+						<listbox id="unused_gmarks_menu_items"/>
+					</hbox>
+				</tabpanel>
+				<tabpanel id="misc_panel" orient="vertical">
+					<checkbox label="&showIcons;" checked="true" preference="prefIcons"/>
+					<checkbox label="&showFavicons;" checked="true"
+							oncommand="onShowFavPress();" preference="prefFavicons"/>
+					<checkbox label="&validateFavicons;" checked="false"
+							preference="prefValidateFavicons" tooltiptext="&validateFavicons.tooltip;"/>
+				</tabpanel>
+			</tabpanels>
+		</tabbox>
+	</prefpane>
+	<prefpane id="pOther" label="&gmopts.tab.other;" orient="vertical"
+			image="chrome://gmarks/skin/other.png">
+		<preferences>
+			<preference id="prefQSShortcut" name="gmarks.keys.quicksearch.key" type="int"/>
+			<preference id="prefReaderLabel" name="gmarks.readerLabel" type="unichar"/>
+			<preference id="prefGS" name="gmarks.suggest" type="bool"/>
+			<preference id="prefCD" name="gmarks.ctrlD" type="bool"/>
+			<preference id="prefNewTab" name="gmarks.openinnewtab" type="bool"/>
+			<preference id="prefConfirmDel" name="gmarks.confirmDelete" type="bool"/>
+			<preference id="prefBkmkCombos" name="gmarks.bkmkLabelCombos" type="bool"/>
+      <preference id="prefVisibility" name="gmarks.visibility" type="int"/>
+		</preferences>
+		<groupbox preference="prefQSShortcut" onsynctopreference="return getQSShortcut(event);">
+			<caption label="&qsTitle;"/>
+			<description>
+				&qsDescription;
+			</description>
+			<textbox id="qsShortcut" onkeyup="changeQSShortcut(event);" readonly="true"/>
+			<checkbox id="disableQS" label="&disableQuickSearch;" checked="false"
+				oncommand="disableQSCMD();"/>
+		</groupbox>
+		<vbox>
+			<hbox>
+				<groupbox>
+					<caption label="Google Reader:"/>
+					<description>
+						&GoogleReader.description;
+					</description>
+					<textbox id="grLabel" preference="prefReaderLabel"/>
+					<checkbox id="grShow" label="&GoogleReader.show;" checked="false"
+						oncommand="toggleGoogleReader();"/>
+				</groupbox>
+				<groupbox>
+					<caption label="&gmopts.tab.other;:"/>
+					<checkbox label="&enableGMarksSuggest;" checked="true" preference="prefGS"/>
+					<checkbox label="&usectrld;" checked="true" preference="prefCD"/>
+					<checkbox label="&openinnewtab;" preference="prefNewTab"/>
+					<checkbox label="&confirmBeforeDelete;" preference="prefConfirmDel"/>
+					<checkbox label="&bkmkLblCombos;" preference="prefBkmkCombos" tooltiptext="&bkmkLblCombos.details;"/>
+				</groupbox>
+			</hbox>
+			<groupbox align="center" flex="1" hidden="true" id="visGroup" orient="horizontal">
+				<label value="Visibility: "/>
+				<menulist id="visList" flex="1" preference="prefVisibility">
+					<menupopup id="visPopup">
+						<menuitem label="Private" value="0"/>
+						<menuitem label="Public" value="1"/>
+					</menupopup>
+				</menulist>
+			</groupbox>
+		</vbox>
+	</prefpane>
+
+	<stringbundleset id="stringbundleset">
+	   <stringbundle id="gmarksBundle" src="chrome://gmarks/locale/gmarks.properties"/>
+	</stringbundleset>
+
+	<script type="application/x-javascript" src="chrome://gmarks/content/options.js" />
+	<script type="application/x-javascript" src="chrome://gmarks/content/treeBuilder.js"/>
+</prefwindow>

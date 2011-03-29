@@ -1,0 +1,154 @@
+<!ENTITY extension.title "GMarks">
+<!ENTITY gmarks.service "Google Bookmarks">
+<!ENTITY addbkmk.visibility "Visibilité :">
+<!ENTITY addbkmk.visibility.option1 "Privé">
+<!ENTITY addbkmk.visibility.option2 "Public">
+<!ENTITY submissonError "Une erreur est survenue en soumettant le favori suivant à Google :">
+<!ENTITY refresh "Actualiser">
+<!ENTITY bkmk.open "Ouvrir">
+<!ENTITY bkmk.openTab "Ouvrir dans un nouvel onglet">
+<!ENTITY bkmk.openWindow "Ouvrir dans une nouvelle fenêtre">
+<!ENTITY bkmk.edit "Propriétés">
+<!ENTITY bkmk.changefavicon "Modifier le favicon">
+<!ENTITY bkmk.rename "Renommer">
+<!ENTITY bkmk.updateURL "Mettre à jour l&apos;URL">
+<!ENTITY bkmk.removelbl "Retirer le libellé">
+<!ENTITY bkmk.newlbl "Ajouter de nouveaux libellés...">
+<!ENTITY bkmk.del "Supprimer">
+<!ENTITY lbl.tabs "Ouvrir dans des onglets">
+<!ENTITY lbl.tabs.key "o">
+<!ENTITY lbl.addhere "Ajouter un favori ici">
+<!ENTITY lbl.addhere.key "a">
+<!ENTITY lbl.rename "Renommer">
+<!ENTITY lbl.rename.key "n">
+<!ENTITY lbl.dellbl "Supprimer le libellé">
+<!ENTITY lbl.dellbl.key "l">
+<!ENTITY lbl.delbkmk "Supprimer les favoris">
+<!ENTITY lbl.delbkmk.key "f">
+<!ENTITY lbl.expand "Développer">
+<!ENTITY addbkmk.label "Ajouter un favori">
+<!ENTITY search.label "Rechercher :">
+<!ENTITY search.key "r">
+<!ENTITY notsignedon "Vous n&apos;êtes pas connecté(e) à votre compte Google.">
+<!ENTITY email "E-mail :">
+<!ENTITY pass "Mot de passe :">
+<!ENTITY autosignin "Se connecter automatiquement">
+<!ENTITY autosignin.tooltip "Vous connecte que si vous ne l&apos;êtes pas déjà">
+<!ENTITY signin "Connexion">
+<!ENTITY signout "Déconnexion">
+<!ENTITY retry "Réessayer">
+<!ENTITY star.tooltip "Ouvre GMarks dans la barre latérale">
+<!ENTITY GMarks.add "Ajouter à GMarks">
+<!ENTITY GMarks.quickAdd "Ajouter rapidement à GMarks">
+<!ENTITY GMarks.quickAdd.tooltip "Ajouter à GMarks (Sans passer par la fenêtre d&apos;ajout d&apos;un favori)">
+<!ENTITY tree.colTitle "Favoris Google">
+<!ENTITY sidebar.title "GMarks">
+<!ENTITY pref.main.title "Principal">
+<!ENTITY options.title "Options">
+<!ENTITY options.sidebar "Panneau latéral">
+<!ENTITY options.toolbar "Barre d&apos;outils">
+<!ENTITY options.menu "Menu">
+<!ENTITY options.misc "Divers">
+<!ENTITY bkmksmenu.hide "Masquer le menu Marques-pages">
+<!ENTITY gmarksmenu.enable "Activer le menu GMarks">
+<!ENTITY gmarksmenu.rename "Renommer le menu &quot;Gmarks&quot; en &quot;Favoris&quot;">
+<!ENTITY menu.title "GMarks">
+<!ENTITY menu.accesskey "G">
+<!ENTITY menu.add "Ajouter">
+<!ENTITY menu.remove "Supprimer">
+<!ENTITY menu.reset "Réinitialiser">
+<!ENTITY menu.up "Monter">
+<!ENTITY menu.down "Descendre">
+<!ENTITY import.label "Importer les favoris Firefox">
+<!ENTITY export.label "Exporter les favoris Google">
+<!ENTITY delete.label "Supprimer les favoris Google">
+<!ENTITY delete.tooltip "GMarks vous a endommagé quelque chose ? Merci de m&apos;en faire part.">
+<!ENTITY editfilters.label "Éditer les filtres">
+<!ENTITY sort.label "Classer par :">
+<!ENTITY sort.title "Titre (Alphabétiquement)">
+<!ENTITY sort.date "Date">
+<!ENTITY sort.visits "Visites (Historique Firefox)">
+<!ENTITY sort.clicks "Clics sur les favoris">
+<!ENTITY accountinfo.label "Préférences du compte">
+<!ENTITY alwaysuse "Toujours utiliser ce compte">
+<!ENTITY alwaysuse.tooltip "Utilise le compte spécifié même si vous êtes connecté(e) à un autre compte">
+<!ENTITY nosignin "Je peux me connecter moi-même, merci.">
+<!ENTITY options.other "Autres options">
+<!ENTITY enableGMarksSuggest "Activer GMarks Suggest">
+<!ENTITY showAddBookmark "Afficher le bouton Ajouter un favori">
+<!ENTITY usectrld "Activer le support pour Ctrl+D/Ctrl+Maj+D">
+<!ENTITY showIcons "Afficher les icônes">
+<!ENTITY showFavicons "Afficher les favicons">
+<!ENTITY validateFavicons "Valider les favicons">
+<!ENTITY validateFavicons.tooltip "Vérifie s&apos;il existe un favicon pour un favori, désactiver si vous avez beaucoup de favoris.">
+<!ENTITY showCount "Afficher le nombre de favoris">
+<!ENTITY httpsFavicons "Afficher les favicons des sites protégés (https)">
+<!ENTITY showrecent "Afficher les 10 favoris les plus récents">
+<!ENTITY showfrequent "Afficher les 10 favoris les plus utilisés">
+<!ENTITY whatisthis "Qu&apos;est-ce que c&apos;est ?">
+<!ENTITY nestedChar "Séparateur pour les libellés en arborescence :">
+<!ENTITY disableQuickSearch "Désactiver la recherche rapide">
+<!ENTITY qsTitle "Raccourci de recherche rapide">
+<!ENTITY qsDescription "Appuyer sur n&apos;importe quelle touche dans la zone de texte pour modifier le raccourci de recherche rapide">
+<!ENTITY HiddenLabels "Entrer ci-dessous les libellés à masquer.">
+<!ENTITY unlabeledDescription "Libellé par défaut pour ceux qui n&apos;en ont pas.">
+<!ENTITY unlabeldDescrioption2 "Laisser vide pour ne pas montrer ce libellé supplémentaire">
+<!ENTITY GoogleReader.description "Libellé par défaut pour les articles favoris de Google Reader.">
+<!ENTITY GoogleReader.show "Afficher les articles favoris dans GMarks.">
+<!ENTITY openinnewtab "Toujours ouvrir dans un nouvel onglet.">
+<!ENTITY toolbar.title "Barre d&apos;outils de favoris GMarks">
+<!ENTITY toolbar.hide "Ne pas afficher la barre personnelle">
+<!ENTITY toolbar.begining "Afficher avant la barre d&apos;outils de marque-pages Firefox">
+<!ENTITY toolbar.end "Afficher après la barre d&apos;outils de marque-pages Firefox">
+<!ENTITY toolbar.label "Libellé de la barre d&apos;outils de favoris :">
+<!ENTITY toolbar.desc "Laisser vide pour afficher tous les favoris.">
+<!ENTITY toolbar.showIconsOnly "Afficher les icônes seulement">
+<!ENTITY confirmBeforeDelete "Confirmer avant suppression">
+<!ENTITY bkmkLblCombos "Autoriser la combinaison Favori+Libellé">
+<!ENTITY bkmkLblCombos.details "Combine un favori avec son libellé ayant le même nom, en cliquant sur le groupe combiné, le site &apos;favorisé&apos; s&apos;ouvre, en cliquant sur les signes + ou -, le dossier s&apos;ouvre.">
+<!ENTITY gmopts.tab.general "Général">
+<!ENTITY gmopts.tab.display "Affichage">
+<!ENTITY gmopts.tab.other "Autre">
+<!ENTITY caption.more "Plus">
+<!ENTITY filters.tabs.filtersList "Filtres">
+<!ENTITY filters.tabs.createFilter "Créer un filtre">
+<!ENTITY filters.tabs.editFilter "Modifier un filtre">
+<!ENTITY filterList.description "Les filtres suivants sont appliqués à tous les nouveaux favoris :">
+<!ENTITY filter.bkmk.results "Favori(s) trouvé(s) pour ce filtre :">
+<!ENTITY createFilter.query "Requête">
+<!ENTITY createFilter.action "Action">
+<!ENTITY field.name "Nom :">
+<!ENTITY field.url "URL :">
+<!ENTITY field.labels "Libellés :">
+<!ENTITY field.notes "Notes :">
+<!ENTITY cQuery.all "Tout :">
+<!ENTITY cAction.description1 "Commencer avec ++ pour ajouter les modifications au début du champ du nom ou des notes.">
+<!ENTITY cAction.labels "Ajouter des libellés :">
+<!ENTITY cAction.name "Modifier le nom :">
+<!ENTITY cAction.url "Modifier l&apos;URL :">
+<!ENTITY cAction.notes "Ajouter des notes :">
+<!ENTITY cAction.delete "Supprimer (Pour ceux déjà favorisés)">
+<!ENTITY convertToNested "Transforme de multiple libellés en un libellé en arborescence">
+<!ENTITY cAction.createFilter.label "Créer le filtre">
+<!ENTITY cAction.cancel.label "Annuler">
+<!ENTITY cAction.applyAll.label "Appliquer aussi aux favoris ci-dessous :">
+<!ENTITY labels.howto "Séparer les libellés avec une virgule : Actualités, A faire, ...">
+<!ENTITY qSearch.info "Champ Recherche rapide d&apos;un Favori (appuyer deux fois sur Home pour masquer le champ)">
+<!ENTITY addtoFFandGMarks "Les deux">
+<!ENTITY organize "Organiser GMarks">
+<!ENTITY org.file "Fichier">
+<!ENTITY org.file.accesskey "f">
+<!ENTITY org.file.import "Importer">
+<!ENTITY org.file.export "Exporter">
+<!ENTITY org.file.filters "Filtres">
+<!ENTITY org.file.close "Fermer">
+<!ENTITY org.file.close.accesskey "e">
+<!ENTITY org.close.commandkey "w">
+<!ENTITY details.name "Nom">
+<!ENTITY details.url "Emplacement">
+<!ENTITY details.notes "Notes">
+<!ENTITY details.labels "Libellés">
+<!ENTITY details.dateAdded "Date d&apos;Ajout">
+<!ENTITY details.visited "Visité">
+<!ENTITY details.lastVisited "Dernière Visite">
+<!ENTITY gmarks.loading "Chargement...">
