@@ -98,8 +98,8 @@
 .gmqsPopup{
 	width: 440px;
 }
-.gmarksQuickSearch{
-	background-color: #FFFFFF;
+#gmarksQuickSearch, .gmarksQuickSearch{
+ 	background-color: #FFFFFF;
 }
 /*Sidebar loading*/
 #treeStack{
