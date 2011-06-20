@@ -5,11 +5,11 @@
   <RDF:Description RDF:about="rdf:#$Wb+XL2"
                    em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
                    em:minVersion="3.0"
-                   em:maxVersion="4.0.*" />
+                   em:maxVersion="5.*" />
   <RDF:Description RDF:about="urn:mozilla:install-manifest"
                    em:id="{A64F9D1E-FA5E-11DA-A187-6B94C2ED2B83}"
                    em:name="GMarks"
-                   em:version="1.0.2.2"
+                   em:version="1.0.3"
                    em:creator="John Marshall"
                    em:description="Shows your google bookmarks in the sidebar."
                    em:homepageURL="https://addons.mozilla.org/en-US/firefox/addon/2888"
