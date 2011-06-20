@@ -255,6 +255,8 @@ var GM = {
     window.openDialog("chrome://gmarks/content/editBookmark.xul",strbundle.getString("editBookmarkTitle"),"chrome,centerscreen,modal",bm.title, bm.url,bm.labels,bm.notes,bm.id,bm.mode,false);
   },
   updateURL : function(bm){
+	var answer = confirm("Are you sure to update the URL?");
+	if (!answer) return;
     var newURL=window.content.location.href;
     GMS.onRemoveBookmark(bm,false,false);
     GMS.actionHist.pop();
