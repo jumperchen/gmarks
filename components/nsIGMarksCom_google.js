@@ -217,7 +217,7 @@ nsGMarksCom.prototype = {
           } else if (!token || token==""){
             var cookies = req.getResponseHeader("Set-Cookie").split(/;|(\n)/);
             for (var i=0;i<cookies.length;i++){
-              if (cookies[i].match(/^(GALX)=/)){
+              if (cookies[i] && cookies[i].match(/^(GALX)=/)){
                 token="&"+cookies[i];
               }
             }
