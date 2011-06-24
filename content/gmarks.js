@@ -125,6 +125,8 @@ var GM={
     }
   },
   updateURL : function(url){
+	var answer = confirm("Are you sure to update the URL?");
+	if (!answer) return;
     bm=GMS.getBookmark(url);
     var newURL=window.content.location.href;
     GMS.onRemoveBookmark(bm,false);
