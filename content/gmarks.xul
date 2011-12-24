@@ -11,6 +11,11 @@
   <keyset id="mainKeyset">
       <key id="key_GMOpenSidebar" command="viewGmarksSidebar" key="m" modifiers="alt"/>
   </keyset>
+  <menupopup id="contentAreaContextMenu">
+        <menuseparator/>
+        <menuitem id="menu_addBookmark"
+				oncommand="GM.addGMark()"/>
+   </menupopup>
   <popupset>
     <popup id="gm-bookmarkPopup" style="padding:1px;background-color: white;border: 1px solid gray;">
       <menuitem label="&bkmk.open;" oncommand="openUILinkIn(GM.getURL(),'current');"/>

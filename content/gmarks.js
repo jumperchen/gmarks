@@ -331,6 +331,13 @@ function doGMarksLoad(event){
   }, false);
   GM.observer.register();
   insertInToolbar();
+  
+  var contextMenu = document.getElementById("menu_addBookmark");
+  if (contextMenu) {
+	var label = GMS.strbundle.GetStringFromName("addeditbookmark");
+	contextMenu.setAttribute("label", label);
+	contextMenu.setAttribute("tooltiptext", label);
+  }
 }
 function initGMarksMenu(){
   //dump("initGMarksMenu\n");
